@@ -16,11 +16,14 @@ if hash chsh >/dev/null 2>&1; then
 fi
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
 echo "Setup dotfiles repo"
 mkdir ~/Projects
 cd ~/Projects
 git clone https://github.com/gstokkink/dotfiles dotfiles
+cd dotfiles
+git submodule update -i
 
 echo "Linking dotfiles"
 ln -nsf ~/Projects/dotfiles/zshrc ~/.zshrc
@@ -28,6 +31,8 @@ ln -nsf ~/Projects/dotfiles/gitignore ~/.gitignore
 ln -nsf ~/Projects/dotfiles/gitconfig ~/.gitconfig
 ln -nsf ~/Projects/dotfiles/iterm2 ~/.iterm2
 ln -nsf ~/Projects/dotfiles/gemrc ~/.gemrc
+ln -nsf ~/Projects/dotfiles/vimrc ~/.vimrc
+ln -nsf ~/Projects/dotfiles/vim ~/.vim
 
 
 echo "Switch dotfiles remote"
