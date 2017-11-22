@@ -1,0 +1,7 @@
+[alias]
+	ci = commit
+	co = checkout
+	st = status
+[user]
+	name = Gerjan Stokkink
+	email = gerjan@bookingexperts.nl
