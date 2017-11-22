@@ -27,6 +27,8 @@ ln -nsf ~/Projects/dotfiles/zshrc ~/.zshrc
 ln -nsf ~/Projects/dotfiles/gitignore ~/.gitignore
 ln -nsf ~/Projects/dotfiles/gitconfig ~/.gitconfig
 ln -nsf ~/Projects/dotfiles/iterm2 ~/.iterm2
+ln -nsf ~/Projects/dotfiles/gemrc ~/.gemrc
+
 
 echo "Switch dotfiles remote"
 git remote rm origin
