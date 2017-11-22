@@ -12,8 +12,10 @@ export ZSH=/Users/gerjan/.oh-my-zsh
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Powerlevel9K config
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
+POWERLEVEL9K_DISABLE_RPROMPT=true
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_middle"
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
