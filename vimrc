@@ -50,6 +50,7 @@ if $ITERM_PROFILE =~ 'Dark'
 else
   set background=light
 endif
+let g:solarized_termtrans = 1
 colorscheme solarized
 call togglebg#map("<F5>")
 
