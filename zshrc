@@ -101,3 +101,4 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias e=vim
+alias be='bundle exec'

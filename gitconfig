@@ -2,6 +2,7 @@
 	ci = commit
 	co = checkout
 	st = status
+	br = branch
 [user]
 	name = Gerjan Stokkink
 	email = gerjan@bookingexperts.nl
