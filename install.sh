@@ -6,11 +6,11 @@ if [[ ! -x $(which brew) ]]; then
 fi
 
 brew update
-brew install cask postgresql@9.6 rbenv ack awscli imagemagick phantom-js redis curl git vim wget zsh
-brew cask install iterm2 google-chrome flux moom firefox java8 atom slack
+brew install cask postgresql@9.6 rbenv ack awscli imagemagick phantomjs redis curl git vim wget zsh
+brew cask install iterm2 google-chrome flux moom firefox java atom slack
 brew install elasticsearch@5.6
 echo "Installing Ruby and the Bundler gem"
-rbenv install
+rbenv init
 gem install bundler
 
 echo "Installing oh-my-zsh"
