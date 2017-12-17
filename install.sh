@@ -20,6 +20,10 @@ echo "Installing Ruby and the Bundler gem"
 rbenv install 2.4.3
 rbenv global 2.4.3
 gem install bundler
+rbenv install 2.2.6
+rbenv shell 2.2.6
+gem install bundler
+rbenv shell 2.4.3
 
 echo "Installing oh-my-zsh"
 if hash chsh >/dev/null 2>&1; then
