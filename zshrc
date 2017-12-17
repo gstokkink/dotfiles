@@ -13,7 +13,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Powerlevel9K config
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
-#POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time)
 POWERLEVEL9K_DISABLE_RPROMPT=true
 POWERLEVEL9K_TIME_BACKGROUND="black"
 POWERLEVEL9K_TIME_FOREGROUND="249"
@@ -70,7 +70,6 @@ POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  vi-mode
   git
   osx
   cp
@@ -106,3 +105,6 @@ export EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias be='bundle exec'
 alias e='vim'
+
+# Disable shared tab history
+unsetopt share_history
