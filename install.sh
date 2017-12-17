@@ -28,6 +28,9 @@ fi
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
+cd ~/Downloads
+curl -fsSLO https://github.com/powerline/fonts/raw/master/Inconsolata/Inconsolata%20for%20Powerline.otf
+
 echo "Setup dotfiles repo"
 mkdir ~/Projects
 cd ~/Projects
