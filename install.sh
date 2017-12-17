@@ -6,9 +6,9 @@ if [[ ! -x $(which brew) ]]; then
 fi
 
 brew update
-brew install cask postgresql@9.6 elasticsearch@5.6 rbenv ack awscli imagemagick phantom-js redis curl git vim wget zsh
-brew cask install iterm2 google-chrome flux moomi firefox
-
+brew install cask postgresql@9.6 rbenv ack awscli imagemagick phantom-js redis curl git vim wget zsh
+brew cask install iterm2 google-chrome flux moom firefox java8 atom slack
+brew install elasticsearch@5.6
 echo "Installing Ruby and the Bundler gem"
 rbenv install
 gem install bundler
@@ -37,9 +37,39 @@ ln -nsf ~/Projects/dotfiles/gemrc ~/.gemrc
 ln -nsf ~/Projects/dotfiles/vimrc ~/.vimrc
 ln -nsf ~/Projects/dotfiles/vim ~/.vim
 
-
 echo "Switch dotfiles remote"
 git remote rm origin
 git remote add origin git@github.com:gstokkink/dotfiles.git
+
+echo "Installing projects"
+cd ~/Projects
+git clone git@github.com:bookingexperts/bookingexperts.git
+cd bookingexperts
+bundle
+cd ..
+git clone git@github.com:bookingexperts/parkcms.git
+cd parkcms
+bundle
+cd ..
+git clone git@github.com:bookingexperts/cms.git
+cd cms
+bundle
+cd ..
+git clone git@github.com:bookingexperts/mediator.git
+cd mediator
+bundle
+cd ..
+git clone git@github.com:bookingexperts/assistance.git
+cd assistance
+bundle
+cd ..
+git clone git@github.com:bookingexperts/nucleus.git
+cd nucleus
+bundle
+cd ..
+git clone git@github.com:bookingexperts/model_attributes.git
+cd model_attributes
+bundle
+cd ..
 
 echo "All done!"
