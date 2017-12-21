@@ -7,7 +7,7 @@ fi
 
 brew update
 brew install cask postgresql@9.6 rbenv ack awscli imagemagick phantomjs redis curl git wget zsh zsh-syntax-highlighting
-brew cask install iterm2 google-chrome flux moom firefox java atom slack
+brew cask install iterm2 google-chrome moom firefox java atom slack
 brew install elasticsearch@5.6
 
 echo "Installing PostgreSQL and Elastic Search services"
