@@ -6,7 +6,7 @@ if [[ ! -x $(which brew) ]]; then
 fi
 
 brew update
-brew install cask postgresql@9.6 rbenv ack awscli imagemagick phantomjs redis curl git wget zsh zsh-syntax-highlighting
+brew install ruby vim cask postgresql@9.6 rbenv ack awscli imagemagick phantomjs redis curl git wget zsh zsh-syntax-highlighting
 brew cask install iterm2 google-chrome moom firefox java atom slack
 brew install elasticsearch@5.6
 
@@ -17,13 +17,13 @@ brew services start postgresql@9.6
 brew services start elasticsearch@5.6
 
 echo "Installing Ruby and the Bundler gem"
-rbenv install 2.4.3
-rbenv global 2.4.3
+rbenv install 2.5.0
+rbenv global 2.5.0
 gem install bundler
 rbenv install 2.2.6
 rbenv shell 2.2.6
 gem install bundler
-rbenv shell 2.4.3
+rbenv shell 2.5.0
 
 echo "Installing oh-my-zsh"
 if hash chsh >/dev/null 2>&1; then
@@ -42,6 +42,10 @@ cd ~/Projects
 git clone https://github.com/gstokkink/dotfiles dotfiles
 cd dotfiles
 git submodule update -i
+cd vim/bundle/command-t
+rake clean
+rake make
+cd ../../..
 
 echo "Linking dotfiles"
 ln -nsf ~/Projects/dotfiles/zshrc ~/.zshrc

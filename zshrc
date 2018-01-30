@@ -107,3 +107,6 @@ alias e='vim'
 
 # Disable shared tab history
 unsetopt share_history
+
+# Disable Spring
+export DISABLE_SPRING=1

@@ -3,6 +3,9 @@
 	co = checkout
 	st = status
 	br = branch
+	ws = rebase --whitespace=fix
 [user]
 	name = Gerjan Stokkink
 	email = gerjan@bookingexperts.nl
+[rebase]
+	autosquash = true
