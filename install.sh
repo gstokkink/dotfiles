@@ -18,8 +18,11 @@ brew services start elasticsearch@5.6
 
 echo "Installing Ruby and the Bundler gem"
 rbenv install 2.5.1
-rbenv shell 2.5.1
 rbenv global 2.5.1
+rbenv shell 2.5.1
+gem install bundler
+rbenv install 2.2.6
+rbenv shell 2.2.6
 gem install bundler
 rbenv install 2.5.0
 rbenv shell 2.5.0
