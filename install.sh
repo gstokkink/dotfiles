@@ -11,10 +11,11 @@ brew tap caskroom/versions
 brew cask install iterm2 google-chrome moom java8 atom slack
 brew install elasticsearch@5.6
 
-echo "Installing PostgreSQL and Elastic Search services"
+echo "Installing PostgreSQL, Elastic Search, and Redis services"
 brew link --force elasticsearch@5.6
 brew services start postgresql
 brew services start elasticsearch@5.6
+brew services start redis
 
 echo "Installing Ruby and the Bundler gem"
 rbenv install 2.5.1
