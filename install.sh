@@ -17,8 +17,8 @@ brew services start postgresql
 brew services start elasticsearch@5.6
 
 echo "Installing Ruby and the Bundler gem"
-rbenv install 2.5.1
-rbenv global 2.5.1
+rbenv install 2.5.0
+rbenv global 2.5.0
 gem install bundler
 
 echo "Setup dotfiles repo"
