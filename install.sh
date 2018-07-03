@@ -21,17 +21,6 @@ rbenv install 2.5.1
 rbenv global 2.5.1
 gem install bundler
 
-echo "Installing oh-my-zsh"
-if hash chsh >/dev/null 2>&1; then
-  sudo chsh -s $(grep /zsh$ /etc/shells | tail -1) $(whoami)
-fi
-
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-
-cd ~/Downloads
-curl -fsSLO https://github.com/powerline/fonts/raw/master/Inconsolata/Inconsolata%20for%20Powerline.otf
-
 echo "Setup dotfiles repo"
 mkdir ~/Projects
 cd ~/Projects
@@ -86,5 +75,17 @@ git clone git@github.com:bookingexperts/model_attributes.git
 cd model_attributes
 bundle
 cd ..
+
+echo "Installing oh-my-zsh"
+cd ~/Downloads
+curl -fsSLO https://github.com/powerline/fonts/raw/master/Inconsolata/Inconsolata%20for%20Powerline.otf
+
+if hash chsh >/dev/null 2>&1; then
+  sudo chsh -s $(grep /zsh$ /etc/shells | tail -1) $(whoami)
+fi
+
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 echo "All done!"
