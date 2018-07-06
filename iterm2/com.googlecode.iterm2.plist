@@ -232,7 +232,7 @@
 		</dict>
 	</dict>
 	<key>Default Arrangement Name</key>
-	<string>All projects</string>
+	<string>Default</string>
 	<key>Default Bookmark Guid</key>
 	<string>72444AEE-8426-4135-9220-B2CF37250F91</string>
 	<key>DimOnlyText</key>
@@ -244,10 +244,8 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Documents</string>
+	<string>~/Projects/dotfiles/iterm2</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{712, 448}</string>
-	<key>NSNavPanelExpandedSizeForSaveMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
@@ -280,12 +278,15 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
-	<key>NSWindow Frame SessionsPreferences</key>
-	<string>269 126 606 469 0 0 1920 1177 </string>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>2417 280 937 512 1920 51 2560 1417 </string>
+	<string>608 675 937 464 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>3629 51 851 1417 1920 51 2560 1417 </string>
+	<string>1709 0 851 1417 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1820,15 +1821,13 @@
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>E3473235-C491-4DD0-AE5B-FE2B6894A89B</string>
+	<string>E100E641-CDDA-4B8E-BDA7-36D0C559AF49</string>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
-	<key>NoSyncPermissionToShowTip</key>
-	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>535218164.17448997</real>
+	<real>552304169.53170204</real>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
 	<key>OpenArrangementAtStartup</key>
@@ -1875,11 +1874,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=61</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=15</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-01-26T08:18:37Z</date>
+	<date>2018-07-03T09:51:53Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1890,7 +1889,7 @@
 	<true/>
 	<key>Window Arrangements</key>
 	<dict>
-		<key>All projects</key>
+		<key>Default</key>
 		<array>
 			<dict>
 				<key>Desired Columns</key>
@@ -1910,7 +1909,7 @@
 				<key>Saved Window Type</key>
 				<integer>0</integer>
 				<key>Screen</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>Selected Tab Index</key>
 				<integer>1</integer>
 				<key>Tabs</key>
@@ -2175,7 +2174,7 @@
 												<real>0.44058024883270264</real>
 											</dict>
 											<key>Guid</key>
-											<string>1AE76F80-0C60-4375-AD49-DEF3F67B01A1</string>
+											<string>CD6D1818-40F4-4742-9F71-30481B5CBBBD</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -2709,12 +2708,13 @@
 										<key>Bookmark Name</key>
 										<string>Dark</string>
 										<key>Columns</key>
-										<integer>118</integer>
+										<integer>120</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
 										<array>
 											<string>/Users/gerjan</string>
+											<string>/Users/gerjan/Projects/parkcms</string>
 											<string>/Users/gerjan/Projects/parkcms</string>
 											<string>/Users/gerjan/Projects/parkcms</string>
 											<string>/Users/gerjan/Projects/parkcms</string>
@@ -3021,7 +3021,7 @@
 												<real>0.44058024883270264</real>
 											</dict>
 											<key>Guid</key>
-											<string>89C68442-F344-4C5F-8A00-DFF5DD9666E6</string>
+											<string>C92C3C72-505E-4EB3-8D5A-E410682A38FB</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -3555,7 +3555,7 @@
 										<key>Bookmark Name</key>
 										<string>Dark</string>
 										<key>Columns</key>
-										<integer>118</integer>
+										<integer>120</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
@@ -3961,7 +3961,7 @@
 												<real>0.44058024883270264</real>
 											</dict>
 											<key>Guid</key>
-											<string>C31A9666-3CA2-4313-82D2-0AB527E3D055</string>
+											<string>CDDFF300-D2DE-4052-B6FC-2C6B029D02E0</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -4495,12 +4495,13 @@
 										<key>Bookmark Name</key>
 										<string>Dark</string>
 										<key>Columns</key>
-										<integer>118</integer>
+										<integer>120</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
 										<array>
 											<string>/Users/gerjan</string>
+											<string>/Users/gerjan/Projects/parkcms</string>
 											<string>/Users/gerjan/Projects/parkcms</string>
 											<string>/Users/gerjan/Projects/parkcms</string>
 											<string>/Users/gerjan/Projects/parkcms</string>
@@ -4613,7 +4614,7 @@
 							<array>
 								<dict>
 									<key>Is Active</key>
-									<integer>0</integer>
+									<integer>1</integer>
 									<key>Session</key>
 									<dict>
 										<key>Bookmark</key>
@@ -4866,7 +4867,7 @@
 												<real>0.44058024883270264</real>
 											</dict>
 											<key>Guid</key>
-											<string>9DF604BD-712C-48D6-A2BB-8A83A30B849D</string>
+											<string>D45B93CC-E6FD-4EAE-9F8C-C72DD6C729F5</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -5400,12 +5401,13 @@
 										<key>Bookmark Name</key>
 										<string>Dark</string>
 										<key>Columns</key>
-										<integer>118</integer>
+										<integer>120</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
 										<array>
 											<string>/Users/gerjan</string>
+											<string>/Users/gerjan/Projects/bookingexperts</string>
 											<string>/Users/gerjan/Projects/bookingexperts</string>
 											<string>/Users/gerjan/Projects/bookingexperts</string>
 											<string>/Users/gerjan/Projects/bookingexperts</string>
@@ -5494,9 +5496,9 @@
 										<key>Session GUID</key>
 										<string>03295EE9-2EB5-4274-9243-BADFB7403218</string>
 										<key>Session Name</key>
-										<string>be</string>
+										<string>..ookingexperts</string>
 										<key>Session Window Title</key>
-										<string>bundle exec rails c</string>
+										<string>gerjan@gerjan-work-macbook: ~/Projects/bookingexperts</string>
 										<key>Shell Integration Ever Used</key>
 										<false/>
 										<key>Substitutions</key>
@@ -5773,7 +5775,7 @@
 												<real>0.44058024883270264</real>
 											</dict>
 											<key>Guid</key>
-											<string>68BE3A54-3D36-4435-8050-13828E91C9A4</string>
+											<string>04E203B4-F3EF-4273-9591-69F34552FC7F</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -6307,7 +6309,7 @@
 										<key>Bookmark Name</key>
 										<string>Dark</string>
 										<key>Columns</key>
-										<integer>118</integer>
+										<integer>120</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
@@ -6460,7 +6462,7 @@
 								</dict>
 								<dict>
 									<key>Is Active</key>
-									<integer>1</integer>
+									<integer>0</integer>
 									<key>Session</key>
 									<dict>
 										<key>Bookmark</key>
@@ -6713,7 +6715,7 @@
 												<real>0.44058024883270264</real>
 											</dict>
 											<key>Guid</key>
-											<string>18B02C15-DC27-494C-B6BE-D81CB87B8D20</string>
+											<string>ACFA25A7-5080-4905-A923-CCD8DCBE893A</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -7247,12 +7249,13 @@
 										<key>Bookmark Name</key>
 										<string>Dark</string>
 										<key>Columns</key>
-										<integer>118</integer>
+										<integer>120</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
 										<array>
 											<string>/Users/gerjan</string>
+											<string>/Users/gerjan/Projects/bookingexperts</string>
 											<string>/Users/gerjan/Projects/bookingexperts</string>
 											<string>/Users/gerjan/Projects/bookingexperts</string>
 											<string>/Users/gerjan/Projects/bookingexperts</string>
@@ -7349,9 +7352,9 @@
 										<key>Session GUID</key>
 										<string>68A18021-E071-4B3A-BD32-11013CD080CD</string>
 										<key>Session Name</key>
-										<string>be</string>
+										<string>..ookingexperts</string>
 										<key>Session Window Title</key>
-										<string>bundle exec rails s -b 0.0.0.0 -p 3001</string>
+										<string>gerjan@gerjan-work-macbook: ~/Projects/bookingexperts</string>
 										<key>Shell Integration Ever Used</key>
 										<false/>
 										<key>Substitutions</key>
@@ -7651,7 +7654,7 @@
 												<real>0.44058024883270264</real>
 											</dict>
 											<key>Guid</key>
-											<string>E8572DF2-895C-4854-82D0-AE94F9FE703F</string>
+											<string>554E85F5-4B02-466B-9F2D-AEEA8E93D3EA</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -8185,12 +8188,13 @@
 										<key>Bookmark Name</key>
 										<string>Dark</string>
 										<key>Columns</key>
-										<integer>118</integer>
+										<integer>120</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
 										<array>
 											<string>/Users/gerjan</string>
+											<string>/Users/gerjan/Projects/cms</string>
 											<string>/Users/gerjan/Projects/cms</string>
 											<string>/Users/gerjan/Projects/cms</string>
 											<string>/Users/gerjan/Projects/cms</string>
@@ -8500,7 +8504,7 @@
 												<real>0.44058024883270264</real>
 											</dict>
 											<key>Guid</key>
-											<string>E173C612-F7E4-44C6-952B-704BACFF6484</string>
+											<string>4A07D02D-0457-400E-9AC9-742987A3E658</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -9034,7 +9038,7 @@
 										<key>Bookmark Name</key>
 										<string>Dark</string>
 										<key>Columns</key>
-										<integer>118</integer>
+										<integer>120</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
@@ -9440,7 +9444,7 @@
 												<real>0.44058024883270264</real>
 											</dict>
 											<key>Guid</key>
-											<string>FEBA2594-8F7F-4F95-B444-48B2F32FC95E</string>
+											<string>855CF9DA-BAA9-4533-B337-776C146910C9</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -9974,12 +9978,13 @@
 										<key>Bookmark Name</key>
 										<string>Dark</string>
 										<key>Columns</key>
-										<integer>118</integer>
+										<integer>120</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
 										<array>
 											<string>/Users/gerjan</string>
+											<string>/Users/gerjan/Projects/cms</string>
 											<string>/Users/gerjan/Projects/cms</string>
 											<string>/Users/gerjan/Projects/cms</string>
 											<string>/Users/gerjan/Projects/cms</string>
@@ -10318,7 +10323,7 @@
 												<real>0.44058024883270264</real>
 											</dict>
 											<key>Guid</key>
-											<string>F4B998E7-3D9B-4067-8603-E5D3D7878156</string>
+											<string>47E20B22-6888-4181-82CE-9544AB2A5FE6</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -10852,12 +10857,13 @@
 										<key>Bookmark Name</key>
 										<string>Dark</string>
 										<key>Columns</key>
-										<integer>118</integer>
+										<integer>120</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
 										<array>
 											<string>/Users/gerjan</string>
+											<string>/Users/gerjan/Projects/mediator</string>
 											<string>/Users/gerjan/Projects/mediator</string>
 											<string>/Users/gerjan/Projects/mediator</string>
 											<string>/Users/gerjan/Projects/mediator</string>
@@ -11169,7 +11175,7 @@
 												<real>0.44058024883270264</real>
 											</dict>
 											<key>Guid</key>
-											<string>C0F12692-C635-43DE-AC5B-3AF8F02CCF58</string>
+											<string>BB45F2FB-A839-4DCF-BE36-440FE29F339C</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -11703,13 +11709,13 @@
 										<key>Bookmark Name</key>
 										<string>Dark</string>
 										<key>Columns</key>
-										<integer>118</integer>
+										<integer>120</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
 										<array>
 											<string>/Users/gerjan/Projects/mediator/test</string>
-											<string>/Users/gerjan/Projects/mediator/test</string>
+											<string>/Users/gerjan/Projects/mediator</string>
 											<string>/Users/gerjan/Projects/mediator</string>
 											<string>/Users/gerjan/Projects/mediator</string>
 											<string>/Users/gerjan/Projects/mediator</string>
@@ -12109,7 +12115,7 @@
 												<real>0.44058024883270264</real>
 											</dict>
 											<key>Guid</key>
-											<string>FBCE3E34-E417-45B2-880D-FC5007892B38</string>
+											<string>85CAE991-12D1-453D-9C9F-6BA3C9332EB5</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -12643,12 +12649,13 @@
 										<key>Bookmark Name</key>
 										<string>Dark</string>
 										<key>Columns</key>
-										<integer>118</integer>
+										<integer>120</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
 										<array>
 											<string>/Users/gerjan</string>
+											<string>/Users/gerjan/Projects/mediator</string>
 											<string>/Users/gerjan/Projects/mediator</string>
 											<string>/Users/gerjan/Projects/mediator</string>
 											<string>/Users/gerjan/Projects/mediator</string>
@@ -13050,7 +13057,7 @@
 												<real>0.44058024883270264</real>
 											</dict>
 											<key>Guid</key>
-											<string>EC39B552-C661-4A94-8B9D-259061006A15</string>
+											<string>98F0FC0A-3B25-4070-9911-1BA796789324</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -13584,7 +13591,7 @@
 										<key>Bookmark Name</key>
 										<string>Dark</string>
 										<key>Columns</key>
-										<integer>118</integer>
+										<integer>120</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
@@ -13592,6 +13599,7 @@
 											<string>/Users/gerjan</string>
 											<string>/Users/gerjan/Projects/nucleus</string>
 											<string>/Users/gerjan/Projects/nucleus</string>
+											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
 											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
 											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
 											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
@@ -13903,7 +13911,7 @@
 												<real>0.44058024883270264</real>
 											</dict>
 											<key>Guid</key>
-											<string>59052BDE-0744-47C5-A7C8-076927BE8073</string>
+											<string>8875549D-494D-4167-BD08-AB2673309EB9</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -14437,7 +14445,7 @@
 										<key>Bookmark Name</key>
 										<string>Dark</string>
 										<key>Columns</key>
-										<integer>118</integer>
+										<integer>120</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
@@ -14448,23 +14456,23 @@
 											<string>/Users/gerjan/Projects/nucleus</string>
 											<string>/Users/gerjan/Projects/nucleus</string>
 											<string>/Users/gerjan/Projects/nucleus</string>
+											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
+											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
+											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
+											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
+											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
+											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
+											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
+											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
+											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
+											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
+											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
+											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
+											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
+											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
+											<string>/Users/gerjan/Projects/nucleus/test</string>
+											<string>/Users/gerjan/Projects/nucleus/test</string>
 											<string>/Users/gerjan/Projects/nucleus</string>
-											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
-											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
-											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
-											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
-											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
-											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
-											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
-											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
-											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
-											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
-											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
-											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
-											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
-											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
-											<string>/Users/gerjan/Projects/nucleus/test</string>
-											<string>/Users/gerjan/Projects/nucleus/test</string>
 											<string>/Users/gerjan/Projects/nucleus</string>
 											<string>/Users/gerjan/Projects/nucleus</string>
 											<string>/Users/gerjan/Projects/nucleus</string>
@@ -14843,7 +14851,7 @@
 												<real>0.44058024883270264</real>
 											</dict>
 											<key>Guid</key>
-											<string>DF29116D-2F02-46E2-AF94-59510D6C4398</string>
+											<string>92ABC067-A67F-4116-A42B-953AB4E9BF55</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -15377,7 +15385,7 @@
 										<key>Bookmark Name</key>
 										<string>Dark</string>
 										<key>Columns</key>
-										<integer>118</integer>
+										<integer>120</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
@@ -15385,6 +15393,7 @@
 											<string>/Users/gerjan</string>
 											<string>/Users/gerjan/Projects/nucleus</string>
 											<string>/Users/gerjan/Projects/nucleus</string>
+											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
 											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
 											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
 											<string>/Users/gerjan/Projects/nucleus/test/dummy</string>
@@ -15477,15 +15486,15 @@
 				<key>Window Type</key>
 				<integer>0</integer>
 				<key>X Origin</key>
-				<real>3629</real>
+				<real>1709</real>
 				<key>Y Origin</key>
-				<real>51</real>
+				<real>0.0</real>
 			</dict>
 		</array>
 	</dict>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>3.1.5</string>
+	<string>3.1.6</string>
 </dict>
 </plist>

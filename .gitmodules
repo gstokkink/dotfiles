@@ -114,3 +114,7 @@
 	path = vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized
 	ignore = dirty
+[submodule "vim/bundle/vim-rubocop"]
+	path = vim/bundle/vim-rubocop
+	url = https://github.com/ngmy/vim-rubocop
+  ignore = dirty
