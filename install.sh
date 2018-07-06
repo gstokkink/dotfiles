@@ -11,26 +11,20 @@ brew tap caskroom/versions
 brew cask install iterm2 google-chrome moom java8 atom slack
 brew install elasticsearch@5.6
 
-echo "Installing PostgreSQL and Elastic Search services"
+echo "Installing PostgreSQL, Elastic Search, and Redis services"
 brew link --force elasticsearch@5.6
 brew services start postgresql
 brew services start elasticsearch@5.6
+brew services start redis
 
 echo "Installing Ruby and the Bundler gem"
 rbenv install 2.5.1
 rbenv global 2.5.1
 gem install bundler
-
-echo "Installing oh-my-zsh"
-if hash chsh >/dev/null 2>&1; then
-  sudo chsh -s $(grep /zsh$ /etc/shells | tail -1) $(whoami)
-fi
-
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-
-cd ~/Downloads
-curl -fsSLO https://github.com/powerline/fonts/raw/master/Inconsolata/Inconsolata%20for%20Powerline.otf
+rbenv install 2.2.6
+gem install bundler
+rbenv install 2.5.0
+gem install bundler
 
 echo "Setup dotfiles repo"
 mkdir ~/Projects
@@ -86,5 +80,17 @@ git clone git@github.com:bookingexperts/model_attributes.git
 cd model_attributes
 bundle
 cd ..
+
+echo "Installing oh-my-zsh"
+cd ~/Downloads
+curl -fsSLO https://github.com/powerline/fonts/raw/master/Inconsolata/Inconsolata%20for%20Powerline.otf
+
+if hash chsh >/dev/null 2>&1; then
+  sudo chsh -s $(grep /zsh$ /etc/shells | tail -1) $(whoami)
+fi
+
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 echo "All done!"
