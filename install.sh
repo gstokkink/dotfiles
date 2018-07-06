@@ -31,6 +31,7 @@ mkdir ~/Projects
 cd ~/Projects
 git clone https://github.com/gstokkink/dotfiles dotfiles
 cd dotfiles
+git pull
 git submodule update -i
 cd vim/bundle/command-t
 rake clean
