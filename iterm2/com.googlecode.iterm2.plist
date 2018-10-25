@@ -16,6 +16,8 @@
 	<string>manual</string>
 	<key>AutoHideTmuxClientSession</key>
 	<false/>
+	<key>CGFontRenderingFontSmoothingDisabled</key>
+	<false/>
 	<key>CopySelection</key>
 	<false/>
 	<key>Custom Color Presets</key>
@@ -236,10 +238,14 @@
 	<key>Default Bookmark Guid</key>
 	<string>0EC3BDEE-365F-44BD-9A38-A19EA2118CC9</string>
 	<key>DimBackgroundWindows</key>
-	<false/>
+	<true/>
 	<key>DimInactiveSplitPanes</key>
 	<true/>
 	<key>DimOnlyText</key>
+	<false/>
+	<key>EnableDivisionView</key>
+	<true/>
+	<key>HideScrollbar</key>
 	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
@@ -288,13 +294,13 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>650 588 620 392 0 0 1920 1177 </string>
+	<string>970 768 620 392 0 0 2560 1417 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>181 94 606 469 0 0 1920 1177 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>607 969 928 394 0 0 2560 1417 </string>
+	<string>607 851 796 486 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1709 0 851 1417 0 0 2560 1417 </string>
+	<string>1280 13 655 1164 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>343 181 585 427 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
@@ -302,6 +308,8 @@
 		<dict>
 			<key>ASCII Anti Aliased</key>
 			<true/>
+			<key>Allow Title Setting</key>
+			<false/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -577,7 +585,7 @@
 			<key>Description</key>
 			<string>Default</string>
 			<key>Disable Window Resizing</key>
-			<true/>
+			<false/>
 			<key>Flashing Bell</key>
 			<false/>
 			<key>Foreground Color</key>
@@ -1111,6 +1119,8 @@
 			<string>/Users/gerjan</string>
 		</dict>
 	</array>
+	<key>NoSyncHaveRequestedFullDiskAccess</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
@@ -1175,17 +1185,25 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-10-09T16:04:36Z</date>
+	<date>2018-10-25T08:40:30Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
 	<true/>
+	<key>ShowPaneTitles</key>
+	<false/>
+	<key>SmartPlacement</key>
+	<true/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.59999999999999998</real>
+	<real>0.44406300080128214</real>
+	<key>TabStyleWithAutomaticOption</key>
+	<integer>1</integer>
 	<key>Use background pattern indicator</key>
 	<true/>
+	<key>UseBorder</key>
+	<false/>
 	<key>Window Arrangements</key>
 	<dict>
 		<key>Default</key>
@@ -1198,7 +1216,7 @@
 				<key>Has Toolbelt</key>
 				<false/>
 				<key>Height</key>
-				<real>1417</real>
+				<real>1177</real>
 				<key>Hide After Opening</key>
 				<false/>
 				<key>Hiding Toolbelt Should Resize Window</key>
@@ -1227,6 +1245,8 @@
 										<dict>
 											<key>ASCII Anti Aliased</key>
 											<true/>
+											<key>Allow Title Setting</key>
+											<false/>
 											<key>Ambiguous Double Width</key>
 											<false/>
 											<key>Ansi 0 Color</key>
@@ -1502,7 +1522,7 @@
 											<key>Description</key>
 											<string>Default</string>
 											<key>Disable Window Resizing</key>
-											<true/>
+											<false/>
 											<key>Flashing Bell</key>
 											<false/>
 											<key>Foreground Color</key>
@@ -1517,7 +1537,7 @@
 												<real>0.396078431372549</real>
 											</dict>
 											<key>Guid</key>
-											<string>0EC3BDEE-365F-44BD-9A38-A19EA2118CC9</string>
+											<string>629BFB35-5A23-46BB-991C-0F35AE51A724</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -1970,6 +1990,8 @@
 											<string>InconsolataForPowerline 14</string>
 											<key>Option Key Sends</key>
 											<integer>0</integer>
+											<key>Original Guid</key>
+											<string>0EC3BDEE-365F-44BD-9A38-A19EA2118CC9</string>
 											<key>Prompt Before Closing 2</key>
 											<false/>
 											<key>Right Option Key Sends</key>
@@ -2010,6 +2032,19 @@
 											<true/>
 											<key>Sync Title</key>
 											<false/>
+											<key>Tab Color</key>
+											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
+												<key>Blue Component</key>
+												<real>0.3843137254901961</real>
+												<key>Color Space</key>
+												<string>sRGB</string>
+												<key>Green Component</key>
+												<real>0.41960784313725491</real>
+												<key>Red Component</key>
+												<real>0.98431372549019602</real>
+											</dict>
 											<key>Tags</key>
 											<array/>
 											<key>Terminal Type</key>
@@ -2026,6 +2061,8 @@
 											<true/>
 											<key>Use Non-ASCII Font</key>
 											<false/>
+											<key>Use Tab Color</key>
+											<true/>
 											<key>Vertical Spacing</key>
 											<real>1</real>
 											<key>Visual Bell</key>
@@ -2038,12 +2075,18 @@
 										<key>Bookmark Name</key>
 										<string>Light</string>
 										<key>Columns</key>
-										<integer>118</integer>
+										<integer>90</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
 										<array>
 											<string>/Users/gerjan</string>
+											<string>/Users/gerjan/Projects/bookingexperts</string>
+											<string>/Users/gerjan/Projects/bookingexperts</string>
+											<string>/Users/gerjan/Projects/bookingexperts</string>
+											<string>/Users/gerjan/Projects/bookingexperts</string>
+											<string>/Users/gerjan/Projects/bookingexperts</string>
+											<string>/Users/gerjan/Projects/bookingexperts</string>
 											<string>/Users/gerjan/Projects/bookingexperts</string>
 											<string>/Users/gerjan/Projects/bookingexperts</string>
 											<string>/Users/gerjan/Projects/bookingexperts</string>
@@ -2066,7 +2109,7 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>26</integer>
+										<integer>23</integer>
 										<key>Session Default Name</key>
 										<string>Light</string>
 										<key>Session GUID</key>
@@ -2087,9 +2130,9 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>457</real>
+										<real>377</real>
 										<key>width</key>
-										<real>851</real>
+										<real>640</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -2105,6 +2148,8 @@
 										<dict>
 											<key>ASCII Anti Aliased</key>
 											<true/>
+											<key>Allow Title Setting</key>
+											<false/>
 											<key>Ambiguous Double Width</key>
 											<false/>
 											<key>Ansi 0 Color</key>
@@ -2380,7 +2425,7 @@
 											<key>Description</key>
 											<string>Default</string>
 											<key>Disable Window Resizing</key>
-											<true/>
+											<false/>
 											<key>Flashing Bell</key>
 											<false/>
 											<key>Foreground Color</key>
@@ -2395,7 +2440,7 @@
 												<real>0.396078431372549</real>
 											</dict>
 											<key>Guid</key>
-											<string>0EC3BDEE-365F-44BD-9A38-A19EA2118CC9</string>
+											<string>A303F7A0-C761-46DD-A662-DB9A6F0D192F</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -2848,6 +2893,8 @@
 											<string>InconsolataForPowerline 14</string>
 											<key>Option Key Sends</key>
 											<integer>0</integer>
+											<key>Original Guid</key>
+											<string>0EC3BDEE-365F-44BD-9A38-A19EA2118CC9</string>
 											<key>Prompt Before Closing 2</key>
 											<false/>
 											<key>Right Option Key Sends</key>
@@ -2888,6 +2935,19 @@
 											<true/>
 											<key>Sync Title</key>
 											<false/>
+											<key>Tab Color</key>
+											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
+												<key>Blue Component</key>
+												<real>0.3843137254901961</real>
+												<key>Color Space</key>
+												<string>sRGB</string>
+												<key>Green Component</key>
+												<real>0.41960784313725491</real>
+												<key>Red Component</key>
+												<real>0.98431372549019602</real>
+											</dict>
 											<key>Tags</key>
 											<array/>
 											<key>Terminal Type</key>
@@ -2904,6 +2964,8 @@
 											<true/>
 											<key>Use Non-ASCII Font</key>
 											<false/>
+											<key>Use Tab Color</key>
+											<true/>
 											<key>Vertical Spacing</key>
 											<real>1</real>
 											<key>Visual Bell</key>
@@ -2916,12 +2978,15 @@
 										<key>Bookmark Name</key>
 										<string>Light</string>
 										<key>Columns</key>
-										<integer>118</integer>
+										<integer>90</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
 										<array>
 											<string>/Users/gerjan</string>
+											<string>/Users/gerjan/Projects/bookingexperts</string>
+											<string>/Users/gerjan/Projects/bookingexperts</string>
+											<string>/Users/gerjan/Projects/bookingexperts</string>
 											<string>/Users/gerjan/Projects/bookingexperts</string>
 											<string>/Users/gerjan/Projects/bookingexperts</string>
 											<string>/Users/gerjan/Projects/bookingexperts</string>
@@ -2942,7 +3007,7 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>26</integer>
+										<integer>23</integer>
 										<key>Session Default Name</key>
 										<string>Light</string>
 										<key>Session GUID</key>
@@ -2963,13 +3028,13 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>456</real>
+										<real>376</real>
 										<key>width</key>
-										<real>851</real>
+										<real>640</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
-										<real>458</real>
+										<real>378</real>
 									</dict>
 								</dict>
 								<dict>
@@ -2981,6 +3046,8 @@
 										<dict>
 											<key>ASCII Anti Aliased</key>
 											<true/>
+											<key>Allow Title Setting</key>
+											<false/>
 											<key>Ambiguous Double Width</key>
 											<false/>
 											<key>Ansi 0 Color</key>
@@ -3256,7 +3323,7 @@
 											<key>Description</key>
 											<string>Default</string>
 											<key>Disable Window Resizing</key>
-											<true/>
+											<false/>
 											<key>Flashing Bell</key>
 											<false/>
 											<key>Foreground Color</key>
@@ -3271,7 +3338,7 @@
 												<real>0.396078431372549</real>
 											</dict>
 											<key>Guid</key>
-											<string>0EC3BDEE-365F-44BD-9A38-A19EA2118CC9</string>
+											<string>D39930F7-FAFF-40BE-BE2D-EEFFA51248BF</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -3724,6 +3791,8 @@
 											<string>InconsolataForPowerline 14</string>
 											<key>Option Key Sends</key>
 											<integer>0</integer>
+											<key>Original Guid</key>
+											<string>0EC3BDEE-365F-44BD-9A38-A19EA2118CC9</string>
 											<key>Prompt Before Closing 2</key>
 											<false/>
 											<key>Right Option Key Sends</key>
@@ -3764,6 +3833,19 @@
 											<true/>
 											<key>Sync Title</key>
 											<false/>
+											<key>Tab Color</key>
+											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
+												<key>Blue Component</key>
+												<real>0.3843137254901961</real>
+												<key>Color Space</key>
+												<string>sRGB</string>
+												<key>Green Component</key>
+												<real>0.41960784313725491</real>
+												<key>Red Component</key>
+												<real>0.98431372549019602</real>
+											</dict>
 											<key>Tags</key>
 											<array/>
 											<key>Terminal Type</key>
@@ -3780,6 +3862,8 @@
 											<true/>
 											<key>Use Non-ASCII Font</key>
 											<false/>
+											<key>Use Tab Color</key>
+											<true/>
 											<key>Vertical Spacing</key>
 											<real>1</real>
 											<key>Visual Bell</key>
@@ -3792,12 +3876,14 @@
 										<key>Bookmark Name</key>
 										<string>Light</string>
 										<key>Columns</key>
-										<integer>118</integer>
+										<integer>90</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
 										<array>
 											<string>/Users/gerjan</string>
+											<string>/Users/gerjan/Projects/bookingexperts</string>
+											<string>/Users/gerjan/Projects/bookingexperts</string>
 											<string>/Users/gerjan/Projects/bookingexperts</string>
 											<string>/Users/gerjan/Projects/bookingexperts</string>
 											<string>/Users/gerjan/Projects/bookingexperts</string>
@@ -3820,7 +3906,7 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>26</integer>
+										<integer>23</integer>
 										<key>Session Default Name</key>
 										<string>Light</string>
 										<key>Session GUID</key>
@@ -3841,13 +3927,13 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>456</real>
+										<real>376</real>
 										<key>width</key>
-										<real>851</real>
+										<real>640</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
-										<real>915</real>
+										<real>755</real>
 									</dict>
 								</dict>
 							</array>
@@ -3856,9 +3942,9 @@
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>1371</real>
+								<real>1131</real>
 								<key>width</key>
-								<real>851</real>
+								<real>640</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -3882,6 +3968,8 @@
 										<dict>
 											<key>ASCII Anti Aliased</key>
 											<true/>
+											<key>Allow Title Setting</key>
+											<false/>
 											<key>Ambiguous Double Width</key>
 											<false/>
 											<key>Ansi 0 Color</key>
@@ -4157,7 +4245,7 @@
 											<key>Description</key>
 											<string>Default</string>
 											<key>Disable Window Resizing</key>
-											<true/>
+											<false/>
 											<key>Flashing Bell</key>
 											<false/>
 											<key>Foreground Color</key>
@@ -4172,7 +4260,7 @@
 												<real>0.396078431372549</real>
 											</dict>
 											<key>Guid</key>
-											<string>0EC3BDEE-365F-44BD-9A38-A19EA2118CC9</string>
+											<string>A492586C-B785-424C-874C-CBCD1943569E</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -4625,6 +4713,8 @@
 											<string>InconsolataForPowerline 14</string>
 											<key>Option Key Sends</key>
 											<integer>0</integer>
+											<key>Original Guid</key>
+											<string>0EC3BDEE-365F-44BD-9A38-A19EA2118CC9</string>
 											<key>Prompt Before Closing 2</key>
 											<false/>
 											<key>Right Option Key Sends</key>
@@ -4665,6 +4755,19 @@
 											<true/>
 											<key>Sync Title</key>
 											<false/>
+											<key>Tab Color</key>
+											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
+												<key>Blue Component</key>
+												<real>0.97254901960784312</real>
+												<key>Color Space</key>
+												<string>sRGB</string>
+												<key>Green Component</key>
+												<real>0.63921568627450975</real>
+												<key>Red Component</key>
+												<real>0.37254901960784315</real>
+											</dict>
 											<key>Tags</key>
 											<array/>
 											<key>Terminal Type</key>
@@ -4681,6 +4784,8 @@
 											<true/>
 											<key>Use Non-ASCII Font</key>
 											<false/>
+											<key>Use Tab Color</key>
+											<true/>
 											<key>Vertical Spacing</key>
 											<real>1</real>
 											<key>Visual Bell</key>
@@ -4693,12 +4798,14 @@
 										<key>Bookmark Name</key>
 										<string>Light</string>
 										<key>Columns</key>
-										<integer>118</integer>
+										<integer>90</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
 										<array>
 											<string>/Users/gerjan</string>
+											<string>/Users/gerjan/Projects/parkcms</string>
+											<string>/Users/gerjan/Projects/parkcms</string>
 											<string>/Users/gerjan/Projects/parkcms</string>
 											<string>/Users/gerjan/Projects/parkcms</string>
 											<string>/Users/gerjan/Projects/parkcms</string>
@@ -4719,7 +4826,7 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>26</integer>
+										<integer>23</integer>
 										<key>Session Default Name</key>
 										<string>Light</string>
 										<key>Session GUID</key>
@@ -4743,9 +4850,9 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>457</real>
+										<real>377</real>
 										<key>width</key>
-										<real>851</real>
+										<real>640</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -4761,6 +4868,8 @@
 										<dict>
 											<key>ASCII Anti Aliased</key>
 											<true/>
+											<key>Allow Title Setting</key>
+											<false/>
 											<key>Ambiguous Double Width</key>
 											<false/>
 											<key>Ansi 0 Color</key>
@@ -5036,7 +5145,7 @@
 											<key>Description</key>
 											<string>Default</string>
 											<key>Disable Window Resizing</key>
-											<true/>
+											<false/>
 											<key>Flashing Bell</key>
 											<false/>
 											<key>Foreground Color</key>
@@ -5051,7 +5160,7 @@
 												<real>0.396078431372549</real>
 											</dict>
 											<key>Guid</key>
-											<string>0EC3BDEE-365F-44BD-9A38-A19EA2118CC9</string>
+											<string>055CC7E2-005C-46B4-8BF6-0F72C4243247</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -5504,6 +5613,8 @@
 											<string>InconsolataForPowerline 14</string>
 											<key>Option Key Sends</key>
 											<integer>0</integer>
+											<key>Original Guid</key>
+											<string>0EC3BDEE-365F-44BD-9A38-A19EA2118CC9</string>
 											<key>Prompt Before Closing 2</key>
 											<false/>
 											<key>Right Option Key Sends</key>
@@ -5544,6 +5655,19 @@
 											<true/>
 											<key>Sync Title</key>
 											<false/>
+											<key>Tab Color</key>
+											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
+												<key>Blue Component</key>
+												<real>0.97254901960784312</real>
+												<key>Color Space</key>
+												<string>sRGB</string>
+												<key>Green Component</key>
+												<real>0.63921568627450975</real>
+												<key>Red Component</key>
+												<real>0.37254901960784315</real>
+											</dict>
 											<key>Tags</key>
 											<array/>
 											<key>Terminal Type</key>
@@ -5560,6 +5684,8 @@
 											<true/>
 											<key>Use Non-ASCII Font</key>
 											<false/>
+											<key>Use Tab Color</key>
+											<true/>
 											<key>Vertical Spacing</key>
 											<real>1</real>
 											<key>Visual Bell</key>
@@ -5572,12 +5698,14 @@
 										<key>Bookmark Name</key>
 										<string>Light</string>
 										<key>Columns</key>
-										<integer>118</integer>
+										<integer>90</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
 										<array>
 											<string>/Users/gerjan</string>
+											<string>/Users/gerjan/Projects/parkcms</string>
+											<string>/Users/gerjan/Projects/parkcms</string>
 											<string>/Users/gerjan/Projects/parkcms</string>
 											<string>/Users/gerjan/Projects/parkcms</string>
 											<string>/Users/gerjan/Projects/parkcms</string>
@@ -5598,7 +5726,7 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>26</integer>
+										<integer>23</integer>
 										<key>Session Default Name</key>
 										<string>Light</string>
 										<key>Session GUID</key>
@@ -5619,13 +5747,13 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>456</real>
+										<real>376</real>
 										<key>width</key>
-										<real>851</real>
+										<real>640</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
-										<real>458</real>
+										<real>378</real>
 									</dict>
 								</dict>
 								<dict>
@@ -5637,6 +5765,8 @@
 										<dict>
 											<key>ASCII Anti Aliased</key>
 											<true/>
+											<key>Allow Title Setting</key>
+											<false/>
 											<key>Ambiguous Double Width</key>
 											<false/>
 											<key>Ansi 0 Color</key>
@@ -5912,7 +6042,7 @@
 											<key>Description</key>
 											<string>Default</string>
 											<key>Disable Window Resizing</key>
-											<true/>
+											<false/>
 											<key>Flashing Bell</key>
 											<false/>
 											<key>Foreground Color</key>
@@ -5927,7 +6057,7 @@
 												<real>0.396078431372549</real>
 											</dict>
 											<key>Guid</key>
-											<string>0EC3BDEE-365F-44BD-9A38-A19EA2118CC9</string>
+											<string>3C68EBB6-D11D-48E8-8B00-70FB92904DA7</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -6380,6 +6510,8 @@
 											<string>InconsolataForPowerline 14</string>
 											<key>Option Key Sends</key>
 											<integer>0</integer>
+											<key>Original Guid</key>
+											<string>0EC3BDEE-365F-44BD-9A38-A19EA2118CC9</string>
 											<key>Prompt Before Closing 2</key>
 											<false/>
 											<key>Right Option Key Sends</key>
@@ -6420,6 +6552,19 @@
 											<true/>
 											<key>Sync Title</key>
 											<false/>
+											<key>Tab Color</key>
+											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
+												<key>Blue Component</key>
+												<real>0.97254901960784312</real>
+												<key>Color Space</key>
+												<string>sRGB</string>
+												<key>Green Component</key>
+												<real>0.63921568627450975</real>
+												<key>Red Component</key>
+												<real>0.37254901960784315</real>
+											</dict>
 											<key>Tags</key>
 											<array/>
 											<key>Terminal Type</key>
@@ -6436,6 +6581,8 @@
 											<true/>
 											<key>Use Non-ASCII Font</key>
 											<false/>
+											<key>Use Tab Color</key>
+											<true/>
 											<key>Vertical Spacing</key>
 											<real>1</real>
 											<key>Visual Bell</key>
@@ -6448,12 +6595,14 @@
 										<key>Bookmark Name</key>
 										<string>Light</string>
 										<key>Columns</key>
-										<integer>118</integer>
+										<integer>90</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
 										<array>
 											<string>/Users/gerjan</string>
+											<string>/Users/gerjan/Projects/parkcms</string>
+											<string>/Users/gerjan/Projects/parkcms</string>
 											<string>/Users/gerjan/Projects/parkcms</string>
 											<string>/Users/gerjan/Projects/parkcms</string>
 											<string>/Users/gerjan/Projects/parkcms</string>
@@ -6474,7 +6623,7 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>26</integer>
+										<integer>23</integer>
 										<key>Session Default Name</key>
 										<string>Light</string>
 										<key>Session GUID</key>
@@ -6495,13 +6644,13 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>456</real>
+										<real>376</real>
 										<key>width</key>
-										<real>851</real>
+										<real>640</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
-										<real>915</real>
+										<real>755</real>
 									</dict>
 								</dict>
 							</array>
@@ -6510,9 +6659,9 @@
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>1371</real>
+								<real>1131</real>
 								<key>width</key>
-								<real>851</real>
+								<real>640</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -6526,11 +6675,11 @@
 				<key>TerminalGuid</key>
 				<string>pty-50F90B9D-FE7F-4A6C-924A-33F5149E3CF2</string>
 				<key>Width</key>
-				<real>851</real>
+				<real>640</real>
 				<key>Window Type</key>
 				<integer>0</integer>
 				<key>X Origin</key>
-				<real>1709</real>
+				<real>1280</real>
 				<key>Y Origin</key>
 				<real>0.0</real>
 			</dict>
@@ -6541,6 +6690,6 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.2.3</string>
+	<string>3.2.4</string>
 </dict>
 </plist>
