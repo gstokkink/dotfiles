@@ -45,6 +45,7 @@ ln -nsf ~/Projects/dotfiles/gitconfig ~/.gitconfig
 ln -nsf ~/Projects/dotfiles/iterm2 ~/.iterm2
 ln -nsf ~/Projects/dotfiles/gemrc ~/.gemrc
 ln -nsf ~/Projects/dotfiles/vimrc ~/.vimrc
+ln -nsf ~/Projects/dotfiles/pryrc ~/.pryrc
 ln -nsf ~/Projects/dotfiles/vim ~/.vim
 
 echo "Switch dotfiles remote"
