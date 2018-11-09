@@ -18,12 +18,8 @@ brew services start elasticsearch@5.6
 brew services start redis
 
 echo "Installing Ruby and the Bundler gem"
-rbenv install 2.5.1
-rbenv global 2.5.1
-gem install bundler
-rbenv install 2.2.6
-gem install bundler
-rbenv install 2.5.0
+rbenv install 2.5.3
+rbenv global 2.5.3
 gem install bundler
 
 echo "Setup dotfiles repo"
