@@ -87,8 +87,9 @@ if hash chsh >/dev/null 2>&1; then
   sudo chsh -s $(grep /zsh$ /etc/shells | tail -1) $(whoami)
 fi
 
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+term
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/itools/install.sh)"
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
 echo "All done!"
