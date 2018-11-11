@@ -28,11 +28,6 @@ cd ~/Projects
 git clone https://github.com/gstokkink/dotfiles dotfiles
 cd dotfiles
 git pull
-git submodule update -i
-cd vim/bundle/command-t
-rake clean
-rake make
-cd ../../..
 
 echo "Linking dotfiles"
 ln -nsf ~/Projects/dotfiles/zshrc ~/.zshrc
@@ -40,9 +35,7 @@ ln -nsf ~/Projects/dotfiles/gitignore ~/.gitignore
 ln -nsf ~/Projects/dotfiles/gitconfig ~/.gitconfig
 ln -nsf ~/Projects/dotfiles/iterm2 ~/.iterm2
 ln -nsf ~/Projects/dotfiles/gemrc ~/.gemrc
-ln -nsf ~/Projects/dotfiles/vimrc ~/.vimrc
 ln -nsf ~/Projects/dotfiles/pryrc ~/.pryrc
-ln -nsf ~/Projects/dotfiles/vim ~/.vim
 
 echo "Switch dotfiles remote"
 git remote rm origin
