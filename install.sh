@@ -8,7 +8,7 @@ fi
 brew update
 brew install vim cask postgresql rbenv ack awscli imagemagick redis curl git wget zsh zsh-syntax-highlighting
 brew tap caskroom/versions
-brew cask install adoptopenjdk8
+brew cask install adoptopenjdk8 iterm2 moom
 brew install elasticsearch@5.6
 
 echo "Installing PostgreSQL, Elastic Search, and Redis services"
