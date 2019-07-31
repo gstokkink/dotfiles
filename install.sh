@@ -6,7 +6,7 @@ if [[ ! -x $(which brew) ]]; then
 fi
 
 brew update
-brew install ruby vim cask postgresql rbenv ack awscli imagemagick redis curl git wget zsh zsh-syntax-highlighting
+brew install vim cask postgresql rbenv ack awscli imagemagick redis curl git wget zsh zsh-syntax-highlighting
 brew tap caskroom/versions
 brew cask install java8 slack google-chrome
 brew install elasticsearch@5.6
