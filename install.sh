@@ -6,14 +6,16 @@ if [[ ! -x $(which brew) ]]; then
 fi
 
 brew update
-brew install vim cask postgresql rbenv ack awscli imagemagick redis curl git wget zsh zsh-syntax-highlighting yarn
+brew install vim cask rbenv ack awscli imagemagick redis curl git wget zsh zsh-syntax-highlighting yarn
 brew tap caskroom/versions
 brew cask install adoptopenjdk8 iterm2 moom atom
+brew install postgresql@10
 brew install elasticsearch@5.6
 
 echo "Installing PostgreSQL, Elastic Search, and Redis services"
+brew link --force postgresql@10
 brew link --force elasticsearch@5.6
-brew services start postgresql
+brew services start postgresql@10
 brew services start elasticsearch@5.6
 brew services start redis
 
