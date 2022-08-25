@@ -81,6 +81,9 @@ plugins=(git rails)
 
 source $ZSH/oh-my-zsh.sh
 
+# Disable history sharing
+unsetopt share_history
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
