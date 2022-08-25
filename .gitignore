@@ -1,0 +1,4 @@
+zsh/.zcompdump*
+zsh/.zsh_history
+iterm2/AppSupport
+node_modules

@@ -1,0 +1,12 @@
+[user]
+  name = Gerjan Stokkink
+  email = gerjan@bookingexperts.nl 
+[init]
+	defaultBranch = main
+[alias]
+	st = status
+	pl = pull
+	br = branch
+	p = push
+	c = commit
+	a = add
