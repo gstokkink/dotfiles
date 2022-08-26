@@ -68,12 +68,6 @@ function M.setup_common()
   -- Toggle search highlight
   map('n', '<Leader>/', ':noh<CR>', default_options)
 
-  -- Toggle Git blame
-  map('n', '<Leader>gb', ':Git blame<CR>', default_options)
-
-  -- Navigate to Github
-  map('n', '<Leader>gB', ':GBrowse<CR>', default_options)
-
   -- Run current test
   map('n', '<Leader>t', ':TestNearest<CR>', default_options)
 

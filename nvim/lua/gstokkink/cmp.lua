@@ -7,8 +7,9 @@ local function has_words_before()
 end
 
 cmp.setup({
-  ckmpletion = {
+  completion = {
     autocomplete = false,
+    completeopt = 'menu,menuone,noinsert',
   },
   formatting = {
     fields = { 'menu', 'abbr', 'kind' },
@@ -17,7 +18,7 @@ cmp.setup({
     ['<C-u>'] = cmp.mapping.scroll_docs(-4), -- Scroll documentation up
     ['<C-d>'] = cmp.mapping.scroll_docs(4), -- Scroll documentation down
     ['<C-e>'] = cmp.mapping.abort(), -- Cancel autocompleting
-    ['<CR>'] = cmp.mapping.confirm({ select = false }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+    ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
     ['<C-j>'] = cmp.mapping(function(fallback) -- Jump to next placeholder
       if luasnip.jumpable(1) then
         luasnip.jump(1)
