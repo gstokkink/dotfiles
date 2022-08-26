@@ -28,6 +28,7 @@ api.nvim_exec(
 )
 
 -- Configure colorscheme
+g.background = 'dark'
 g.nord_italic = false
 api.nvim_command('colorscheme nord')
 

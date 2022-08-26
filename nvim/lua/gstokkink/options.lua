@@ -12,19 +12,22 @@ opt.cursorline = true
 -- Use spaces instead of tabs
 opt.expandtab = true
 
+-- Do not continue comments after 'o' or 'O'
+opt.formatoptions = opt.formatoptions:remove('o')
+
 -- Allow hidden buffers with unwritten changes
 opt.hidden = true
-
--- Use special symbols for whitespace
-opt.list = true
-opt.listchars:append('tab:»·')
-opt.listchars:append('trail:·')
 
 -- Use incremental search
 opt.incsearch = true
 
 -- Use global status bar
 opt.laststatus = 3
+
+-- Use special symbols for whitespace
+opt.list = true
+opt.listchars:append('tab:»·')
+opt.listchars:append('trail:·')
 
 -- Use grep regexps
 opt.magic = true
@@ -40,6 +43,9 @@ opt.shiftwidth = 2
 
 -- Prevent double mode display
 opt.showmode = false
+
+-- Do not show intro
+opt.shortmess = opt.shortmess:remove('I')
 
 -- Always show sign column
 opt.signcolumn = 'yes'

@@ -86,7 +86,7 @@ local function multiopen(prompt_bufnr, method)
       end
 
       if row and col then
-        pcall(api.nvim_win_set_cursor, 0, { row, col })
+        pcall(api.nvim_win_set_cursor, 0, { row, col - 1 })
       end
     end
   else
