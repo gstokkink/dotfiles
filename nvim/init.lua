@@ -35,10 +35,8 @@ api.nvim_command('colorscheme nord')
 -- Configure window dimming
 api.nvim_exec(
   [[
-  highlight ActiveWindow ctermbg=None ctermfg=None guifg=#d8dde8 guibg=#2e333f
-  highlight InactiveWindow ctermbg=None ctermfg=None guifg=#9e9e9e guibg=#303030
-
-  set winhighlight=Normal:ActiveWindow,NormalNC:InactiveWindow
+highlight Normal ctermfg=NONE ctermbg=NONE guifg=#d8dde8 guibg=NONE
+highlight NormalNC ctermfg=NONE ctermbg=NONE guifg=#9e9e9e guibg=#303030
 ]],
   false
 )
