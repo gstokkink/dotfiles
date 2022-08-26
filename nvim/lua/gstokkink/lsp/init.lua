@@ -1,13 +1,15 @@
 local M = {}
+local api = vim.api
+local lsp = vim.lsp
 
-function M.on_attach(client, bufnr)
+local function on_attach(client, bufnr)
   -- Enable completion triggered by <C-X><C-O>
   -- See `:help omnifunc` and `:help ins-completion` for more information.
-  vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
+  api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.lsp.omnifunc')
 
   -- Use language server as the handler for formatexpr.
   -- See `:help formatexpr` for more information.
-  vim.api.nvim_buf_set_option(bufnr, 'formatexpr', 'v:lua.vim.lsp.formatexpr()')
+  api.nvim_buf_set_option(bufnr, 'formatexpr', 'v:lua.lsp.formatexpr()')
 
   -- Configure key mappings for language server
   require('gstokkink.mappings').lsp_setup(bufnr)
@@ -18,25 +20,36 @@ function M.on_attach(client, bufnr)
 
   -- tagfunc
   if client.server_capabilities.definitionProvider then
-    vim.api.nvim_buf_set_option(bufnr, 'tagfunc', 'v:lua.vim.lsp.tagfunc')
+    api.nvim_buf_set_option(bufnr, 'tagfunc', 'v:lua.lsp.tagfunc')
   end
 end
 
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
-
--- Add completion support for the language servers
-local server_options = {
-  capabilities = capabilities,
-  on_attach = M.on_attach,
-  flags = {
-    debounce_text_changes = 150,
-  },
-}
+-- Configure floats
 
 function M.setup()
+  local capabilities = lsp.protocol.make_client_capabilities()
+  capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+
   -- Setup language servers
-  require('gstokkink.lsp.servers').setup(server_options)
+  require('gstokkink.lsp.servers').setup({
+    capabilities = capabilities,
+    on_attach = on_attach,
+    flags = {
+      debounce_text_changes = 150,
+    },
+  })
+
+  local handler_configuration = {
+    focusable = true,
+    style = 'minimal',
+    border = 'rounded',
+  }
+
+  -- Hover configuration
+  lsp.handlers['textDocument/hover'] = lsp.with(lsp.handlers.hover, handler_configuration)
+
+  -- Signature help configuration
+  lsp.handlers['textDocument/signatureHelp'] = lsp.with(lsp.handlers.signature_help, handler_configuration)
 end
 
 return M

@@ -93,6 +93,10 @@ function M.setup_common()
 
   -- Close quickfix window
   map('n', '<Leader>w', ':cclose<CR>', default_options)
+
+  -- Make search direction consistent
+  map('n', 'n', '/<CR>', { silent = true })
+  map('n', 'N', '?<CR>', { silent = true })
 end
 
 -- language server specific mappings
