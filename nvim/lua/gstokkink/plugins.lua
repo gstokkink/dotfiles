@@ -123,6 +123,10 @@ return require('packer').startup(function(use)
     config = "require('gstokkink.possession')",
   })
 
+  -- Better search and replace from the command line, and awesome case changing
+  -- TODO: replace by Lua plugin
+  use({ 'tpope/vim-abolish' })
+
   -- Repeat entire macros and complex commands
   -- TODO: replace by Lua plugin
   use({ 'tpope/vim-repeat' })
