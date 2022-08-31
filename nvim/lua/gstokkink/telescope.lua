@@ -135,9 +135,9 @@ function M.setup()
     extensions = {
       live_grep_args = {
         auto_quoting = true,
+        default_mappings = {},
         mappings = {
           i = {
-            ['<C-k>'] = actions.move_selection_previous,
             ['<C-l>'] = require('telescope-live-grep-args.actions').quote_prompt(),
           },
         },

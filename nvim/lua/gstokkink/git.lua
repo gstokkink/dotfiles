@@ -1,5 +1,6 @@
 require('git').setup({
   target_branch = 'staging',
+  default_mappings = false,
   keymaps = {
     -- Open blame window
     blame = '<Leader>gb',

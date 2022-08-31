@@ -20,7 +20,7 @@ local function on_attach(client, bufnr)
 
   -- tagfunc
   if client.server_capabilities.definitionProvider then
-    api.nvim_buf_set_option(bufnr, 'tagfunc', 'v:lua.lsp.tagfunc')
+    api.nvim_buf_set_option(bufnr, 'tagfunc', 'v:lua.vim.lsp.tagfunc')
   end
 end
 

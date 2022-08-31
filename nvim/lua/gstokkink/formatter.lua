@@ -1,11 +1,12 @@
 local M = {}
 local api = vim.api
+local util = require('formatter.util')
 
 local function auto_format()
   local view = vim.fn.winsaveview()
 
-  -- :FormatWrite is supplied by the 'formatter' plugin
-  api.nvim_command(':FormatWrite')
+  -- :FormatWriteLock is supplied by the 'formatter' plugin
+  api.nvim_command(':FormatWriteLock')
 
   vim.fn.winrestview(view)
 end
@@ -35,7 +36,21 @@ function M.setup()
         require('formatter.filetypes.lua').stylua,
       },
       ruby = {
-        require('formatter.filetypes.ruby').rubocop,
+        function()
+          return {
+            exe = 'bundle exec rubocop',
+            args = {
+              '--fix-layout',
+              '--stdin',
+              util.escape_path(util.get_current_buffer_file_name()),
+              '--format',
+              'files',
+              '|',
+              "awk 'f; /^====================$/{f=1}'",
+            },
+            stdin = true,
+          }
+        end,
       },
       sh = {
         require('formatter.filetypes.sh').shfmt,
