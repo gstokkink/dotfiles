@@ -118,10 +118,12 @@ export DISABLE_SPRING=1
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 alias config='git --git-dir=$HOME/.config/.git --work-tree=$HOME/.config'
+alias vim='nvim'
 
 alias mux='tmuxinator'
 alias tks='tmux kill-server'
 alias bex='mux bex'
+alias cms='mux cms'
 alias apps='mux apps'
 alias gems='mux gems'
 alias sem='mux sem'

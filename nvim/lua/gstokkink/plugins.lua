@@ -16,6 +16,12 @@ return require('packer').startup(function(use)
   -- Let packer.nvim manage itself
   use({ 'wbthomason/packer.nvim' })
 
+  -- Faster and improved filetype detection
+  use({
+    'nathom/filetype.nvim',
+    config = "require('gstokkink.filetype')",
+  })
+
   -- Theme
   use({ 'shaunsingh/nord.nvim' })
 

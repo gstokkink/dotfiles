@@ -1,7 +1,7 @@
 local api = vim.api
 local g = vim.g
 
---Disable old vi compatibility
+-- Disable old vi compatibility
 api.nvim_command('set nocompatible')
 
 -- Set global leader to space and local leader to \
