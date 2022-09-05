@@ -23,7 +23,15 @@ return require('packer').startup(function(use)
   })
 
   -- Theme
-  use({ 'shaunsingh/nord.nvim' })
+  use({ 'sainnhe/gruvbox-material' })
+
+  -- Window dimming
+  use({
+    'gstokkink/tint.nvim',
+    config = function()
+      require('tint').setup()
+    end,
+  })
 
   -- Statusline
   use({

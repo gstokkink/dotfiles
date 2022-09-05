@@ -1,24 +1,23 @@
 local api = vim.api
-local g = vim.g
 
--- Configure colorscheme
-g.background = 'dark'
-g.nord_italic = false
-api.nvim_command('colorscheme nord')
-
--- Configure window dimming
 api.nvim_exec(
   [[
-highlight Normal ctermfg=NONE ctermbg=NONE guifg=#d8dde8 guibg=NONE
-highlight NormalNC ctermfg=NONE ctermbg=NONE guifg=#9e9e9e guibg=#303030
+let g:gruvbox_material_background = 'soft'
+let g:gruvbox_material_better_performance = 1
+
+colorscheme gruvbox-material
 ]],
   false
 )
 
+-- Configure window dimming
+api.nvim_command('highlight Normal ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE')
+api.nvim_command('highlight EndOfBuffer ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE')
+
 -- Fix float backgrounds due to the window dimming
-api.nvim_set_hl(0, 'FloatBorder', { bg = '#2e333f' })
-api.nvim_set_hl(0, 'NormalFloat', { bg = '#2e333f', fg = '#d8dde8' })
-api.nvim_set_hl(0, 'TelescopeNormal', { bg = '#2e333f', fg = '#d8dde8' })
-api.nvim_set_hl(0, 'TelescopePreviewBorder', { bg = '#2e333f' })
-api.nvim_set_hl(0, 'TelescopePromptBorder', { bg = '#2e333f' })
-api.nvim_set_hl(0, 'TelescopeResultsBorder', { bg = '#2e333f' })
+api.nvim_set_hl(0, 'FloatBorder', { bg = '#32302f' })
+api.nvim_set_hl(0, 'NormalFloat', { bg = '#32302f', fg = '#d4be98' })
+api.nvim_set_hl(0, 'TelescopeNormal', { bg = '#32302f', fg = '#d4be98' })
+api.nvim_set_hl(0, 'TelescopePreviewBorder', { bg = '#32302f' })
+api.nvim_set_hl(0, 'TelescopePromptBorder', { bg = '#32302f' })
+api.nvim_set_hl(0, 'TelescopeResultsBorder', { bg = '#32302f' })

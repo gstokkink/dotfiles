@@ -1,6 +1,7 @@
 -- Load modules
 require('gstokkink.setup')
 require('gstokkink.options')
+require('gstokkink.autocmds')
 require('gstokkink.mappings').setup_common()
 require('gstokkink.plugins')
 require('gstokkink.theme')

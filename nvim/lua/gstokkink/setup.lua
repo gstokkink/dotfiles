@@ -4,9 +4,6 @@ local g = vim.g
 -- Disable old vi compatibility
 api.nvim_command('set nocompatible')
 
--- Disable annoying filetype indenting
-api.nvim_command('filetype indent off')
-
 -- Set global leader to space and local leader to \
 g.mapleader = ' '
 g.maplocalleader = '\\'

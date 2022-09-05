@@ -139,6 +139,11 @@ _G.packer_plugins = {
     path = "/Users/work/.local/share/nvim/site/pack/packer/start/git.nvim",
     url = "https://github.com/dinhhuy258/git.nvim"
   },
+  ["gruvbox-material"] = {
+    loaded = true,
+    path = "/Users/work/.local/share/nvim/site/pack/packer/start/gruvbox-material",
+    url = "https://github.com/sainnhe/gruvbox-material"
+  },
   ["indent-blankline.nvim"] = {
     config = { "require('gstokkink.indent-blankline')" },
     loaded = true,
@@ -172,11 +177,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/work/.local/share/nvim/site/pack/packer/start/luasnip",
     url = "https://github.com/l3mOn4d3/luasnip"
-  },
-  ["nord.nvim"] = {
-    loaded = true,
-    path = "/Users/work/.local/share/nvim/site/pack/packer/start/nord.nvim",
-    url = "https://github.com/shaunsingh/nord.nvim"
   },
   ["nvim-autopairs"] = {
     config = { "require('gstokkink.autopairs')" },
@@ -267,6 +267,12 @@ _G.packer_plugins = {
     path = "/Users/work/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["tint.nvim"] = {
+    config = { "\27LJ\2\n2\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\ttint\frequire\0" },
+    loaded = true,
+    path = "/Users/work/.local/share/nvim/site/pack/packer/start/tint.nvim",
+    url = "https://github.com/gstokkink/tint.nvim"
+  },
   ["tmux.nvim"] = {
     config = { "require('gstokkink.tmux')" },
     loaded = true,
@@ -323,14 +329,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-treesitter
-time([[Config for nvim-treesitter]], true)
-require('gstokkink.treesitter')
-time([[Config for nvim-treesitter]], false)
 -- Config for: fidget.nvim
 time([[Config for fidget.nvim]], true)
 try_loadstring("\27LJ\2\n4\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\vfidget\frequire\0", "config", "fidget.nvim")
 time([[Config for fidget.nvim]], false)
+-- Config for: luasnip
+time([[Config for luasnip]], true)
+require('gstokkink.luasnip')
+time([[Config for luasnip]], false)
 -- Config for: filetype.nvim
 time([[Config for filetype.nvim]], true)
 require('gstokkink.filetype')
@@ -351,10 +357,10 @@ time([[Config for nvim-cmp]], false)
 time([[Config for NeoZoom.lua]], true)
 require('gstokkink.zoom')
 time([[Config for NeoZoom.lua]], false)
--- Config for: vim-test
-time([[Config for vim-test]], true)
-require('gstokkink.test')
-time([[Config for vim-test]], false)
+-- Config for: nvim-comment
+time([[Config for nvim-comment]], true)
+try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17nvim_comment\frequire\0", "config", "nvim-comment")
+time([[Config for nvim-comment]], false)
 -- Config for: possession.nvim
 time([[Config for possession.nvim]], true)
 require('gstokkink.possession')
@@ -363,50 +369,54 @@ time([[Config for possession.nvim]], false)
 time([[Config for git.nvim]], true)
 require('gstokkink.git')
 time([[Config for git.nvim]], false)
--- Config for: indent-blankline.nvim
-time([[Config for indent-blankline.nvim]], true)
-require('gstokkink.indent-blankline')
-time([[Config for indent-blankline.nvim]], false)
 -- Config for: nvim-lspconfig
 time([[Config for nvim-lspconfig]], true)
 try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\18gstokkink.lsp\frequire\0", "config", "nvim-lspconfig")
 time([[Config for nvim-lspconfig]], false)
--- Config for: nvim-surround
-time([[Config for nvim-surround]], true)
-try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
-time([[Config for nvim-surround]], false)
--- Config for: lir.nvim
-time([[Config for lir.nvim]], true)
-require('gstokkink.lir')
-time([[Config for lir.nvim]], false)
--- Config for: nvim-numbertoggle
-time([[Config for nvim-numbertoggle]], true)
-try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17numbertoggle\frequire\0", "config", "nvim-numbertoggle")
-time([[Config for nvim-numbertoggle]], false)
--- Config for: telescope.nvim
-time([[Config for telescope.nvim]], true)
-try_loadstring("\27LJ\2\nA\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\24gstokkink.telescope\frequire\0", "config", "telescope.nvim")
-time([[Config for telescope.nvim]], false)
--- Config for: luasnip
-time([[Config for luasnip]], true)
-require('gstokkink.luasnip')
-time([[Config for luasnip]], false)
--- Config for: lualine.nvim
-time([[Config for lualine.nvim]], true)
-require('gstokkink.lualine')
-time([[Config for lualine.nvim]], false)
--- Config for: nvim-comment
-time([[Config for nvim-comment]], true)
-try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17nvim_comment\frequire\0", "config", "nvim-comment")
-time([[Config for nvim-comment]], false)
--- Config for: tmux.nvim
-time([[Config for tmux.nvim]], true)
-require('gstokkink.tmux')
-time([[Config for tmux.nvim]], false)
 -- Config for: vim-illuminate
 time([[Config for vim-illuminate]], true)
 require('gstokkink.illuminate')
 time([[Config for vim-illuminate]], false)
+-- Config for: indent-blankline.nvim
+time([[Config for indent-blankline.nvim]], true)
+require('gstokkink.indent-blankline')
+time([[Config for indent-blankline.nvim]], false)
+-- Config for: lualine.nvim
+time([[Config for lualine.nvim]], true)
+require('gstokkink.lualine')
+time([[Config for lualine.nvim]], false)
+-- Config for: nvim-numbertoggle
+time([[Config for nvim-numbertoggle]], true)
+try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17numbertoggle\frequire\0", "config", "nvim-numbertoggle")
+time([[Config for nvim-numbertoggle]], false)
+-- Config for: nvim-treesitter
+time([[Config for nvim-treesitter]], true)
+require('gstokkink.treesitter')
+time([[Config for nvim-treesitter]], false)
+-- Config for: vim-test
+time([[Config for vim-test]], true)
+require('gstokkink.test')
+time([[Config for vim-test]], false)
+-- Config for: telescope.nvim
+time([[Config for telescope.nvim]], true)
+try_loadstring("\27LJ\2\nA\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\24gstokkink.telescope\frequire\0", "config", "telescope.nvim")
+time([[Config for telescope.nvim]], false)
+-- Config for: lir.nvim
+time([[Config for lir.nvim]], true)
+require('gstokkink.lir')
+time([[Config for lir.nvim]], false)
+-- Config for: tint.nvim
+time([[Config for tint.nvim]], true)
+try_loadstring("\27LJ\2\n2\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\ttint\frequire\0", "config", "tint.nvim")
+time([[Config for tint.nvim]], false)
+-- Config for: nvim-surround
+time([[Config for nvim-surround]], true)
+try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
+time([[Config for nvim-surround]], false)
+-- Config for: tmux.nvim
+time([[Config for tmux.nvim]], true)
+require('gstokkink.tmux')
+time([[Config for tmux.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
