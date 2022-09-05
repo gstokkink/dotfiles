@@ -150,12 +150,6 @@ return require('packer').startup(function(use)
   -- Quicker navigation
   use({ 'ggandor/lightspeed.nvim' })
 
-  -- Colorizer
-  use({
-    'brenoprata10/nvim-highlight-colors',
-    config = "require('gstokkink.highlight-colors')",
-  })
-
   -- Illuminate word under cursor
   use({
     'rrethy/vim-illuminate',
@@ -164,7 +158,10 @@ return require('packer').startup(function(use)
 
   -- Test runner
   -- TODO: replace by Lua plugin
-  use({ 'vim-test/vim-test' })
+  use({
+    'vim-test/vim-test',
+    config = "require('gstokkink.test')",
+  })
 
   -- Formatting
   use({

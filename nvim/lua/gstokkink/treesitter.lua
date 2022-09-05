@@ -3,16 +3,16 @@ require('nvim-treesitter.configs').setup({
   ignore_install = { 'elm', 'embedded_template', 'fortran', 'hack', 'haskell', 'org', 'phpdoc' },
   auto_install = true,
   endwise = {
-    enable = true
+    enable = true,
   },
   indent = {
-    enable = true
+    enable = true,
   },
   highlight = {
     enable = true,
-    additional_vim_regex_highlighting = false
+    additional_vim_regex_highlighting = false,
   },
   rainbow = {
-    enable = true
-  }
+    enable = true,
+  },
 })
