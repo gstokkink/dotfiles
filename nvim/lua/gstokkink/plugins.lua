@@ -28,9 +28,7 @@ return require('packer').startup(function(use)
   -- Window dimming
   use({
     'levouh/tint.nvim',
-    config = function()
-      require('tint').setup()
-    end,
+    config = "require('gstokkink.tint')",
   })
 
   -- Statusline
