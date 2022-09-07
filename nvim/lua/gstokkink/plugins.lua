@@ -1,6 +1,9 @@
 local api = vim.api
 local fn = vim.fn
 
+local packer = require('packer')
+local PACKER_COMPILED_PATH = vim.fn.stdpath('cache') .. '/packer/packer_compiled.lua'
+
 -- Bootstrap packer.nvim
 local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
 local packer_bootstrap = false
@@ -12,7 +15,9 @@ if fn.empty(fn.glob(install_path)) > 0 then
   api.nvim_command('packadd packer.nvim')
 end
 
-return require('packer').startup(function(use)
+packer.init({ compile_path = PACKER_COMPILED_PATH })
+
+packer.startup(function(use)
   -- Let packer.nvim manage itself
   use({ 'wbthomason/packer.nvim' })
 
@@ -20,21 +25,6 @@ return require('packer').startup(function(use)
   use({
     'nathom/filetype.nvim',
     config = "require('gstokkink.filetype')",
-  })
-
-  -- Theme
-  use({ 'sainnhe/gruvbox-material' })
-
-  -- Window dimming
-  use({
-    'levouh/tint.nvim',
-    config = "require('gstokkink.tint')",
-  })
-
-  -- Statusline
-  use({
-    'nvim-lualine/lualine.nvim',
-    config = "require('gstokkink.lualine')",
   })
 
   -- File explorer
@@ -223,9 +213,28 @@ return require('packer').startup(function(use)
     'nyngwang/NeoZoom.lua',
     config = "require('gstokkink.zoom')",
   })
+
+  -- Theme
+  use({
+    'sonph/onehalf',
+    rtp = 'vim',
+  })
+
+  -- Statusline
+  use({
+    'nvim-lualine/lualine.nvim',
+    config = "require('gstokkink.lualine')",
+  })
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
     require('packer').sync()
   end
 end)
+
+if not vim.g.packer_compiled_loaded and vim.loop.fs_stat(PACKER_COMPILED_PATH) then
+  vim.cmd(string.format('source %s', PACKER_COMPILED_PATH))
+
+  vim.g.packer_compiled_loaded = true
+end
