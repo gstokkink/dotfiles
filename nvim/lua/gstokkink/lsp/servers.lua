@@ -74,18 +74,14 @@ local servers = {
 }
 
 function M.setup(server_options)
+  -- lua-dev must be set up before lspconfig
+  require('lua-dev').setup()
+
   local lspconfig = require('lspconfig')
 
   -- Set up language servers
   for server_name, _ in pairs(servers) do
     local opts = vim.tbl_deep_extend('force', server_options, servers[server_name] or {})
-
-    -- Use lua_dev for Lua language server
-    if server_name == 'sumneko_lua' then
-      opts = require('lua-dev').setup({
-        lspconfig = opts,
-      })
-    end
 
     -- For TypeScript language server, setup is handled by the 'typescript' plugin
     if server_name == 'tsserver' then

@@ -2,11 +2,10 @@ local api = vim.api
 local fn = vim.fn
 
 local packer = require('packer')
-local PACKER_COMPILED_PATH = vim.fn.stdpath('cache') .. '/packer/packer_compiled.lua'
 
 -- Bootstrap packer.nvim
 local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
-local packer_bootstrap = false
+local packer_bootstrap = ''
 
 if fn.empty(fn.glob(install_path)) > 0 then
   packer_bootstrap =
@@ -14,8 +13,6 @@ if fn.empty(fn.glob(install_path)) > 0 then
 
   api.nvim_command('packadd packer.nvim')
 end
-
-packer.init({ compile_path = PACKER_COMPILED_PATH })
 
 packer.startup(function(use)
   -- Let packer.nvim manage itself
@@ -218,6 +215,7 @@ packer.startup(function(use)
   use({
     'sonph/onehalf',
     rtp = 'vim',
+    config = "require('gstokkink.onehalf')",
   })
 
   -- Statusline
@@ -228,13 +226,7 @@ packer.startup(function(use)
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
-  if packer_bootstrap then
+  if packer_bootstrap ~= '' then
     require('packer').sync()
   end
 end)
-
-if not vim.g.packer_compiled_loaded and vim.loop.fs_stat(PACKER_COMPILED_PATH) then
-  vim.cmd(string.format('source %s', PACKER_COMPILED_PATH))
-
-  vim.g.packer_compiled_loaded = true
-end

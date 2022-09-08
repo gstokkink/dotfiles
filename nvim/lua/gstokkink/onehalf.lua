@@ -1,12 +1,13 @@
 local api = vim.api
 
 -- Set theme
-api.nvim_command('colorscheme onehalflight')
+vim.cmd.colorscheme('onehalflight')
 
 -- Configure window dimming to work correctly with tmux
 api.nvim_exec(
   [[
 highlight EndOfBuffer ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE
+highlight LineNr ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE
 highlight Normal ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE
 highlight NormalNC ctermfg=NONE ctermbg=NONE guifg=#b3b3b3 guibg=#e3e3e3
 ]],
