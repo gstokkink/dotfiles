@@ -1,4 +1,3 @@
-local api = vim.api
 local fn = vim.fn
 
 local packer = require('packer')
@@ -11,7 +10,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
   packer_bootstrap =
     fn.system({ 'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path })
 
-  api.nvim_command('packadd packer.nvim')
+  vim.cmd.packadd('packer.nvim')
 end
 
 packer.startup(function(use)
@@ -215,7 +214,7 @@ packer.startup(function(use)
   use({
     'sonph/onehalf',
     rtp = 'vim',
-    config = "require('gstokkink.onehalf')",
+    config = "require('gstokkink.theme')",
   })
 
   -- Statusline

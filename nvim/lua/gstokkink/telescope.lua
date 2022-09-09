@@ -10,7 +10,7 @@ local transform_mod = require('telescope.actions.mt').transform_mod
 -- Taken from https://github.com/nvim-telescope/telescope.nvim/issues/1048
 local function stop_insert(callback)
   return function(prompt_bufnr)
-    vim.cmd('stopinsert')
+    vim.cmd.stopinsert()
 
     vim.schedule(function()
       callback(prompt_bufnr)
