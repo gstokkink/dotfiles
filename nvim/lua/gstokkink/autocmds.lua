@@ -11,11 +11,11 @@ local function reset_cursor_line()
 end
 
 local function clear_background()
-  cmd.highlight('Normal guifg=#b3b3b3 guibg=#f3f3f3')
+  cmd.highlight('Normal guibg=#e3e3e3')
 end
 
 local function reset_background()
-  cmd.highlight('Normal guifg=#383a42 guibg=#fafafa')
+  cmd.highlight('Normal guibg=#fafafa')
 end
 
 local group = api.nvim_create_augroup('gstokkink', { clear = true })
