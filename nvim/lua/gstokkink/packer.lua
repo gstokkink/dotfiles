@@ -18,10 +18,7 @@ packer.startup(function(use)
   use({ 'wbthomason/packer.nvim' })
 
   -- Faster and improved filetype detection
-  use({
-    'nathom/filetype.nvim',
-    config = "require('gstokkink.filetype')",
-  })
+  use({ 'nathom/filetype.nvim' })
 
   -- File explorer
   use({

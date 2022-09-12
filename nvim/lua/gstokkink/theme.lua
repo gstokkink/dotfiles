@@ -7,10 +7,12 @@ vim.cmd.colorscheme('onehalflight')
 -- Fix colors
 vim.api.nvim_exec(
   [[
-  highlight EndOfBuffer guifg=NONE guibg=NONE
-  highlight LineNr guifg=NONE guibg=NONE
-  highlight Normal guifg=#383a42 guibg=#fafafa
-  highlight NormalNC guifg=#b3b3b3 guibg=#f3f3f3
+  highlight Normal guibg=#fafafa
+  highlight NormalNC guibg=#e3e3e3
+  highlight Search guibg=#e3e3e3 guifg=#e45649 gui=bold
+  highlight IncSearch guibg=#e3e3e3 guifg=#e45649 gui=bold,underline
+  highlight EndOfBuffer guibg=none
+  highlight LineNr guibg=none
 ]],
   false
 )
