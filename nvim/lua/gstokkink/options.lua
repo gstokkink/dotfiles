@@ -15,9 +15,6 @@ opt.expandtab = true
 -- Do not continue comments after 'o' or 'O'
 opt.formatoptions = opt.formatoptions:remove('o')
 
--- Allow hidden buffers with unwritten changes
-opt.hidden = true
-
 -- Use incremental search
 opt.incsearch = true
 

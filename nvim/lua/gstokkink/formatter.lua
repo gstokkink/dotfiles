@@ -5,8 +5,8 @@ local util = require('formatter.util')
 local function auto_format()
   local view = vim.fn.winsaveview()
 
-  -- :FormatWriteLock is supplied by the 'formatter' plugin
-  api.nvim_command(':FormatWriteLock')
+  -- :FormatWrite is supplied by the 'formatter' plugin
+  api.nvim_command(':FormatWrite')
 
   vim.fn.winrestview(view)
 end

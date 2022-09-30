@@ -10,3 +10,5 @@
 	p = push
 	c = commit
 	a = add
+[rebase]
+	autosquash = true
