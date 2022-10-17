@@ -170,7 +170,7 @@ packer.startup(function(use)
           require('fidget').setup()
         end,
       },
-      { 'folke/lua-dev.nvim' }, -- Useful for Lua language server
+      { 'folke/neodev.nvim' }, -- Useful for Lua language server
       { 'nvim-lua/plenary.nvim' },
       { 'b0o/schemastore.nvim' }, -- Useful for JSON and YAML language servers
       { 'jose-elias-alvarez/typescript.nvim' }, -- useful for TypeScript language server

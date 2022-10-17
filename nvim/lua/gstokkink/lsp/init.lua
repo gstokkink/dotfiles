@@ -27,8 +27,7 @@ end
 -- Configure floats
 
 function M.setup()
-  local capabilities = lsp.protocol.make_client_capabilities()
-  capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+  local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
   -- Setup language servers
   require('gstokkink.lsp.servers').setup({

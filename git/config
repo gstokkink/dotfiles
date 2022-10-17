@@ -12,3 +12,5 @@
 	a = add
 [rebase]
 	autosquash = true
+[advice]
+	skippedCherryPicks = false

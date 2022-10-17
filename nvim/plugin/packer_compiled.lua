@@ -155,11 +155,6 @@ _G.packer_plugins = {
     path = "/Users/work/.local/share/nvim/site/pack/packer/start/lir.nvim",
     url = "https://github.com/tamago324/lir.nvim"
   },
-  ["lua-dev.nvim"] = {
-    loaded = true,
-    path = "/Users/work/.local/share/nvim/site/pack/packer/start/lua-dev.nvim",
-    url = "https://github.com/folke/lua-dev.nvim"
-  },
   ["lualine.nvim"] = {
     config = { "require('gstokkink.lualine')" },
     loaded = true,
@@ -171,6 +166,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/work/.local/share/nvim/site/pack/packer/start/luasnip",
     url = "https://github.com/l3mOn4d3/luasnip"
+  },
+  ["neodev.nvim"] = {
+    loaded = true,
+    path = "/Users/work/.local/share/nvim/site/pack/packer/start/neodev.nvim",
+    url = "https://github.com/folke/neodev.nvim"
   },
   ["nvim-autopairs"] = {
     config = { "require('gstokkink.autopairs')" },
@@ -218,11 +218,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/work/.local/share/nvim/site/pack/packer/start/nvim-treesitter-endwise",
     url = "https://github.com/rrethy/nvim-treesitter-endwise"
-  },
-  ["nvim-ts-rainbow"] = {
-    loaded = true,
-    path = "/Users/work/.local/share/nvim/site/pack/packer/start/nvim-ts-rainbow",
-    url = "https://github.com/p00f/nvim-ts-rainbow"
   },
   onehalf = {
     config = { "require('gstokkink.theme')" },
@@ -327,6 +322,22 @@ time([[Defining packer_plugins]], false)
 time([[Runtimepath customization]], true)
 vim.o.runtimepath = vim.o.runtimepath .. ",/Users/work/.local/share/nvim/site/pack/packer/start/onehalf/vim"
 time([[Runtimepath customization]], false)
+-- Config for: tmux.nvim
+time([[Config for tmux.nvim]], true)
+require('gstokkink.tmux')
+time([[Config for tmux.nvim]], false)
+-- Config for: lir.nvim
+time([[Config for lir.nvim]], true)
+require('gstokkink.lir')
+time([[Config for lir.nvim]], false)
+-- Config for: nvim-treesitter
+time([[Config for nvim-treesitter]], true)
+require('gstokkink.treesitter')
+time([[Config for nvim-treesitter]], false)
+-- Config for: nvim-surround
+time([[Config for nvim-surround]], true)
+try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
+time([[Config for nvim-surround]], false)
 -- Config for: luasnip
 time([[Config for luasnip]], true)
 require('gstokkink.luasnip')
@@ -339,22 +350,26 @@ time([[Config for onehalf]], false)
 time([[Config for vim-illuminate]], true)
 require('gstokkink.illuminate')
 time([[Config for vim-illuminate]], false)
+-- Config for: fidget.nvim
+time([[Config for fidget.nvim]], true)
+try_loadstring("\27LJ\2\n4\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\vfidget\frequire\0", "config", "fidget.nvim")
+time([[Config for fidget.nvim]], false)
 -- Config for: nvim-autopairs
 time([[Config for nvim-autopairs]], true)
 require('gstokkink.autopairs')
 time([[Config for nvim-autopairs]], false)
--- Config for: nvim-cmp
-time([[Config for nvim-cmp]], true)
-require('gstokkink.cmp')
-time([[Config for nvim-cmp]], false)
--- Config for: formatter.nvim
-time([[Config for formatter.nvim]], true)
-try_loadstring("\27LJ\2\nA\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\24gstokkink.formatter\frequire\0", "config", "formatter.nvim")
-time([[Config for formatter.nvim]], false)
 -- Config for: vim-test
 time([[Config for vim-test]], true)
 require('gstokkink.test')
 time([[Config for vim-test]], false)
+-- Config for: possession.nvim
+time([[Config for possession.nvim]], true)
+require('gstokkink.possession')
+time([[Config for possession.nvim]], false)
+-- Config for: formatter.nvim
+time([[Config for formatter.nvim]], true)
+try_loadstring("\27LJ\2\nA\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\24gstokkink.formatter\frequire\0", "config", "formatter.nvim")
+time([[Config for formatter.nvim]], false)
 -- Config for: nvim-comment
 time([[Config for nvim-comment]], true)
 try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17nvim_comment\frequire\0", "config", "nvim-comment")
@@ -375,34 +390,10 @@ time([[Config for git.nvim]], false)
 time([[Config for indent-blankline.nvim]], true)
 require('gstokkink.indent-blankline')
 time([[Config for indent-blankline.nvim]], false)
--- Config for: nvim-surround
-time([[Config for nvim-surround]], true)
-try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
-time([[Config for nvim-surround]], false)
--- Config for: lir.nvim
-time([[Config for lir.nvim]], true)
-require('gstokkink.lir')
-time([[Config for lir.nvim]], false)
--- Config for: nvim-treesitter
-time([[Config for nvim-treesitter]], true)
-require('gstokkink.treesitter')
-time([[Config for nvim-treesitter]], false)
--- Config for: tmux.nvim
-time([[Config for tmux.nvim]], true)
-require('gstokkink.tmux')
-time([[Config for tmux.nvim]], false)
--- Config for: possession.nvim
-time([[Config for possession.nvim]], true)
-require('gstokkink.possession')
-time([[Config for possession.nvim]], false)
 -- Config for: telescope.nvim
 time([[Config for telescope.nvim]], true)
 try_loadstring("\27LJ\2\nA\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\24gstokkink.telescope\frequire\0", "config", "telescope.nvim")
 time([[Config for telescope.nvim]], false)
--- Config for: fidget.nvim
-time([[Config for fidget.nvim]], true)
-try_loadstring("\27LJ\2\n4\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\vfidget\frequire\0", "config", "fidget.nvim")
-time([[Config for fidget.nvim]], false)
 -- Config for: lualine.nvim
 time([[Config for lualine.nvim]], true)
 require('gstokkink.lualine')
@@ -411,6 +402,10 @@ time([[Config for lualine.nvim]], false)
 time([[Config for nvim-numbertoggle]], true)
 try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17numbertoggle\frequire\0", "config", "nvim-numbertoggle")
 time([[Config for nvim-numbertoggle]], false)
+-- Config for: nvim-cmp
+time([[Config for nvim-cmp]], true)
+require('gstokkink.cmp')
+time([[Config for nvim-cmp]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

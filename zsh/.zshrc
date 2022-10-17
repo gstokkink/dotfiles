@@ -101,8 +101,8 @@ fi
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-export LDFLAGS="-L/usr/local/opt/postgresql@10/lib"
-export CPPFLAGS="-I/usr/local/opt/postgresql@10/include"
+export LDFLAGS="-L/usr/local/opt/postgresql@12/lib"
+export CPPFLAGS="-I/usr/local/opt/postgresql@12/include"
 
 # Disable less history
 export LESSHISTFILE=-
@@ -125,6 +125,7 @@ alias apps='mux apps'
 alias gems='mux gems'
 alias sem='mux sem'
 alias pb='mux pb'
+alias ocd='mux ocd'
 
 # To customize prompt, run `p10k configure` or edit $ZDOTDIR/.p10k.zsh.
 [[ ! -f $ZDOTDIR/.p10k.zsh ]] || source $ZDOTDIR/.p10k.zsh

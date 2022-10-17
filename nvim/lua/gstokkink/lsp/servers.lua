@@ -74,8 +74,8 @@ local servers = {
 }
 
 function M.setup(server_options)
-  -- lua-dev must be set up before lspconfig
-  require('lua-dev').setup()
+  -- neodev must be set up before lspconfig
+  require('neodev').setup({})
 
   local lspconfig = require('lspconfig')
 
