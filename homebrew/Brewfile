@@ -3,7 +3,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
-
+brew "python@3.10"
 brew "awscli"
 brew "cmake"
 brew "fd"
@@ -11,11 +11,13 @@ brew "git"
 brew "shared-mime-info"
 brew "imagemagick"
 brew "jq"
+brew "jsonpp"
 brew "libsodium"
 brew "lua-language-server"
+brew "memcached", restart_service: true
 brew "neovim"
 brew "node"
-brew "postgresql@10", restart_service: true, link: true
+brew "postgresql@12", restart_service: true, link: true
 brew "rbenv"
 brew "redis", restart_service: true
 brew "ripgrep"
@@ -26,8 +28,8 @@ brew "tmux"
 brew "wget"
 brew "yarn"
 brew "elastic/tap/elasticsearch-full"
-
 cask "1password"
+cask "docker"
 cask "google-chrome"
 cask "iterm2"
 cask "karabiner-elements"
