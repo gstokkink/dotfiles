@@ -14,7 +14,7 @@ local function on_attach(client, bufnr)
   -- Configure key mappings for language server
   require('gstokkink.mappings').lsp_setup(bufnr)
 
-  -- Disable formatting for language server, we use the 'formatter' plugin instead
+  -- Disable formatting for language servers, we use the 'formatter' plugin instead
   client.server_capabilities.documentFormattingProvider = false
   client.server_capabilities.documentRangeFormattingProvider = false
 

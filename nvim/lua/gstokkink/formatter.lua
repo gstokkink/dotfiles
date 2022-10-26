@@ -61,9 +61,6 @@ function M.setup()
       typescript = {
         require('formatter.filetypes.typescript').prettierd,
       },
-      yaml = {
-        require('formatter.filetypes.yaml').prettierd,
-      },
     },
   })
 
