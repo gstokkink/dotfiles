@@ -61,6 +61,9 @@ function M.setup()
       typescript = {
         require('formatter.filetypes.typescript').prettierd,
       },
+      ['*'] = {
+        require('formatter.filetypes.any').remove_trailing_whitespace,
+      },
     },
   })
 

@@ -109,6 +109,15 @@ local custom_actions = transform_mod({
   end,
 })
 
+local insert_ignore_list = function(prompt_bufnr)
+  local picker = action_state.get_current_picker(prompt_bufnr)
+  local prompt = picker:_get_prompt()
+
+  prompt = prompt .. "-g '!{db/*,lib/tasks/*}'"
+
+  picker:set_prompt(prompt)
+end
+
 function M.setup()
   require('telescope').setup({
     defaults = {
@@ -139,6 +148,9 @@ function M.setup()
         mappings = {
           i = {
             ['<C-l>'] = require('telescope-live-grep-args.actions').quote_prompt(),
+            ['<C-i>'] = insert_ignore_list,
+            ['<C-n>'] = actions.cycle_history_next,
+            ['<C-p>'] = actions.cycle_history_prev,
           },
         },
       },
