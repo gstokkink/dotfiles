@@ -123,7 +123,7 @@ alias bex='mux bex'
 alias cms='mux cms'
 alias apps='mux apps'
 alias gems='mux gems'
-alias sem='mux sem'
+alias sema='mux sema'
 alias pb='mux pb'
 alias ocd='mux ocd'
 

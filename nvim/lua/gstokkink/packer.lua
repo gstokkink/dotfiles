@@ -46,12 +46,7 @@ packer.startup(function(use)
   -- FZF
 
   -- Intelligently show absolute or relative line numbers
-  use({
-    'sitiom/nvim-numbertoggle',
-    config = function()
-      require('numbertoggle').setup()
-    end,
-  })
+  use({ 'sitiom/nvim-numbertoggle' })
 
   -- Adding comments
   use({
@@ -90,7 +85,6 @@ packer.startup(function(use)
         'windwp/nvim-autopairs', -- Autopairs
         config = "require('gstokkink.autopairs')",
       },
-      { 'p00f/nvim-ts-rainbow' }, -- Colored parantheses
       { 'rrethy/nvim-treesitter-endwise' }, -- Autoclosing blocks etc. for Ruby
     },
   })

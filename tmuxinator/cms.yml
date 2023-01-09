@@ -61,7 +61,7 @@ windows:
   - server:
       layout: even-vertical
       panes:
-        - bundle exec rails s -p 3000
+        - bundle exec rails s -p 3001
         - BROWSER=/dev/null LAUNCHY_DRY_RUN=true bundle exec sidekiq
         - foreman start -f Procfile.dev
   - remote:

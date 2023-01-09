@@ -36,21 +36,7 @@ function M.setup()
         require('formatter.filetypes.lua').stylua,
       },
       ruby = {
-        function()
-          return {
-            exe = 'bundle exec rubocop',
-            args = {
-              '--fix-layout',
-              '--stdin',
-              util.escape_path(util.get_current_buffer_file_name()),
-              '--format',
-              'files',
-              '|',
-              "awk 'f; /^====================$/{f=1}'",
-            },
-            stdin = true,
-          }
-        end,
+        require('formatter.filetypes.ruby').rubocop,
       },
       sh = {
         require('formatter.filetypes.sh').shfmt,

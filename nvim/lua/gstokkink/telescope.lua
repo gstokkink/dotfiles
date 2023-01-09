@@ -148,7 +148,7 @@ function M.setup()
         mappings = {
           i = {
             ['<C-l>'] = require('telescope-live-grep-args.actions').quote_prompt(),
-            ['<C-i>'] = insert_ignore_list,
+            ['<C-o>'] = insert_ignore_list,
             ['<C-n>'] = actions.cycle_history_next,
             ['<C-p>'] = actions.cycle_history_prev,
           },

@@ -1,6 +1,6 @@
-# /Users/work/.config/tmuxinator/sem.yml
+# /Users/work/.config/tmuxinator/sema.yml
 
-name: sem
+name: sema
 root: ~/Projects/monorepo/.semaphore
 
 # Optional tmux socket
