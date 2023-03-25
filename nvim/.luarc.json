@@ -39,5 +39,6 @@
         "/Users/work/.local/share/nvim/site/pack/packer/start/typescript.nvim",
         "/Users/work/.local/share/nvim/site/pack/packer/start/vim-illuminate",
         "${3rd}/luassert/library"
-    ]
+    ],
+    "workspace.checkThirdParty": false
 }

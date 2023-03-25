@@ -11,47 +11,31 @@ local servers = {
       },
     },
   },
-  solargraph = {
-    init_options = {
-      formatting = false,
-    },
+  lua_ls = {
     settings = {
-      solargraph = {
-        diagnostics = false,
-      },
-    },
-  },
-  sumneko_lua = {
-    settings = {
-      single_file_support = false,
       Lua = {
-        completion = { callSnippet = 'Both' },
         diagnostics = {
           -- Get the language server to recognize the `vim` global
-          globals = { 'vim', 'describe', 'it', 'before_each', 'after_each', 'packer_plugins' },
+          globals = { 'vim' },
         },
         format = {
+          -- We use the formatter gem to peform formatting
           enable = false,
-        },
-        hint = {
-          enable = true,
         },
         runtime = {
           -- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
           version = 'LuaJIT',
-          -- Setup your lua path
-          path = vim.split(package.path, ';'),
         },
-        telemetry = { enable = false },
+        -- Do not send telemetry data containing a randomized but unique identifier
+        telemetry = {
+          enable = false,
+        },
         workspace = {
-          -- Make the server aware of Neovim runtime files
-          library = {
-            [vim.fn.expand('$VIMRUNTIME/lua')] = true,
-            [vim.fn.expand('$VIMRUNTIME/lua/vim/lsp')] = true,
-          },
-          -- library = vim.api.nvim_get_runtime_file('', true),
-          maxPreload = 2000,
-          preloadFileSize = 50000,
+          -- Skip workspace configuration check
+          checkThirdParty = false,
+
+          -- Make the server aware of neovim runtime files
+          library = vim.api.nvim_get_runtime_file('', true),
         },
       },
     },

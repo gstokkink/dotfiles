@@ -24,17 +24,15 @@ function M.map(mode, key, result, opts)
   end
 end
 
--- Notify helpers
-function M.warn(msg, name)
-  vim.notify(msg, vim.log.levels.WARN, { title = name })
-end
-
-function M.error(msg, name)
-  vim.notify(msg, vim.log.levels.ERROR, { title = name })
-end
-
-function M.info(msg, name)
-  vim.notify(msg, vim.log.levels.INFO, { title = name })
+-- Callback when LSP attaches
+function M.on_attach(on_attach)
+  vim.api.nvim_create_autocmd('LspAttach', {
+    callback = function(args)
+      local buffer = args.buf
+      local client = vim.lsp.get_client_by_id(args.data.client_id)
+      on_attach(client, buffer)
+    end,
+  })
 end
 
 return M
