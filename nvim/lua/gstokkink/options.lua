@@ -28,6 +28,8 @@ opt.guicursor =
 -- Use incremental search
 opt.incsearch = true
 
+opt.indentkeys:remove('.')
+
 -- Use global status bar
 opt.laststatus = 3
 

@@ -127,6 +127,7 @@ alias sema='mux sema'
 alias pb='mux pb'
 alias ocd='mux ocd'
 alias cmn='mux cmn'
+alias ass='mux ass'
 
 # To customize prompt, run `p10k configure` or edit $ZDOTDIR/.p10k.zsh.
 [[ ! -f $ZDOTDIR/.p10k.zsh ]] || source $ZDOTDIR/.p10k.zsh

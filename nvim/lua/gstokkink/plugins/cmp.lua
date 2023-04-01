@@ -13,7 +13,7 @@ return {
       },
     },
     {
-      'zbirenbaum/copilot-cmp',
+      'gstokkink/copilot-cmp',
       dependencies = {
         { 'zbirenbaum/copilot.lua' },
       },
@@ -72,6 +72,7 @@ return {
             fallback()
           end
         end, { 'i', 's' }),
+        ['<C-p>'] = cmp.mapping.complete(), -- Explicitly trigger autocomplete
         ['<Tab>'] = cmp.mapping(function(fallback)
           if cmp.visible() then
             cmp.select_next_item()
@@ -99,16 +100,16 @@ return {
         { name = 'nvim_lsp', keyword_length = 2 },
         { name = 'nvim_lsp_signature_help', keyword_length = 2 },
         { name = 'luasnip', keyword_length = 2 },
-      }, {
         { name = 'buffer', keyword_length = 3 },
       }),
       sorting = {
         priority_weight = 2,
         comparators = {
+          cmp.config.compare.exact,
+
           require('copilot_cmp.comparators').prioritize,
 
           cmp.config.compare.offset,
-          cmp.config.compare.exact,
           cmp.config.compare.score,
           cmp.config.compare.recently_used,
           cmp.config.compare.locality,

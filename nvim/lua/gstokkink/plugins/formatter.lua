@@ -71,10 +71,7 @@ return {
     end
 
     -- Enable autoformatting
-    local auto_format_group = api.nvim_create_augroup('AutoFormat', { clear = true })
-
     api.nvim_create_autocmd('BufWritePost *', {
-      group = auto_format_group,
       callback = function()
         vim.schedule(auto_format)
       end,

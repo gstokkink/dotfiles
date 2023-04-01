@@ -7,7 +7,7 @@ return {
         width = 0.85,
         height = 0.85,
       },
-      border = 'single',
+      border = 'none',
     },
   },
 }

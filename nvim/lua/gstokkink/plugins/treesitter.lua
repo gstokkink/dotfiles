@@ -9,18 +9,16 @@ return {
     },
     {
       'lukas-reineke/indent-blankline.nvim', -- Show indent lines
-      event = { 'BufReadPost', 'BufNewFile' },
       opts = {
         show_current_context = true,
         show_current_context_start = true,
+        use_treesitter = true,
       },
     },
     { 'rrethy/nvim-treesitter-endwise' }, -- Autoclosing blocks etc. for Ruby
     { 'JoosepAlviste/nvim-ts-context-commentstring' }, -- Autodetecting comments for nested languages
   },
-  version = false,
   build = ':TSUpdate',
-  event = { 'BufReadPost', 'BufNewFile' },
   opts = {
     ensure_installed = {
       'bash',
@@ -62,9 +60,6 @@ return {
     },
     indent = {
       enable = true,
-      disable = {
-        'ruby', -- Rely on ruby.vim indenting instead
-      },
     },
   },
   config = function(_, opts)
