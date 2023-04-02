@@ -19,7 +19,7 @@ local servers = {
           globals = { 'vim' },
         },
         format = {
-          -- We use the formatter gem to peform formatting
+          -- We use the formatter gem to perform formatting
           enable = false,
         },
         runtime = {

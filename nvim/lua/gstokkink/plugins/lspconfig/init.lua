@@ -37,6 +37,7 @@ return {
       map('n', '<Leader>rn', ':lua vim.lsp.buf.rename()<CR>', default_options)
       map('n', '<Leader>ca', ':lua vim.lsp.buf.code_action()<CR>', default_options)
       map('n', 'gr', ':lua vim.lsp.buf.references()<CR>', default_options)
+
       -- Disable formatting for language servers, we use the 'formatter' plugin instead
       client.server_capabilities.documentFormattingProvider = false
       client.server_capabilities.documentRangeFormattingProvider = false

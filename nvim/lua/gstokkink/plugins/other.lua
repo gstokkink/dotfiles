@@ -16,4 +16,7 @@ return {
 
   -- Util library used by other plugins
   { 'nvim-lua/plenary.nvim', lazy = true },
+
+  -- Util library used by other plugins
+  { 'MunifTanjim/nui.nvim', lazy = true },
 }

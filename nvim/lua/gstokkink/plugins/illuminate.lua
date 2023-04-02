@@ -23,13 +23,10 @@ return {
     vim.api.nvim_create_autocmd('FileType', {
       callback = function()
         local buffer = vim.api.nvim_get_current_buf()
+
         map(']]', 'next', buffer)
         map('[[', 'prev', buffer)
       end,
     })
   end,
-  keys = {
-    { ']]', desc = 'Next reference' },
-    { '[[', desc = 'Prev reference' },
-  },
 }

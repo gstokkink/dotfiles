@@ -72,7 +72,13 @@ return {
             fallback()
           end
         end, { 'i', 's' }),
-        ['<C-p>'] = cmp.mapping.complete(), -- Explicitly trigger autocomplete
+        ['<C-p>'] = cmp.mapping.complete({ -- Explicitly trigger autocomplete using copilot
+          config = {
+            sources = {
+              { name = 'copilot' },
+            },
+          },
+        }),
         ['<Tab>'] = cmp.mapping(function(fallback)
           if cmp.visible() then
             cmp.select_next_item()
