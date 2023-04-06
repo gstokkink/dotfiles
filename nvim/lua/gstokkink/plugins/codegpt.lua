@@ -26,7 +26,7 @@ return {
       ['tests'] = {
         callback_type = 'code_popup',
         language_instructions = {
-          ruby = 'Do not use RSpec.',
+          ruby = 'Write tests using the Minitest framework. The test class should inherit from ActiveSupport::TestCase. Also use FactoryBot to create the objects under test, assume the factories themselves are already defined elsewhere. Do not stub any functionality. Do not add any comments. Use the RSpec it method to define the test cases. Use the RSpec let method to define the objects created with FactoryBot.',
         },
       },
     }

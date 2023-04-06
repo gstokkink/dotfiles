@@ -61,18 +61,13 @@ map(
 )
 
 -- Live grep with prompt
-map(
-  'n',
-  '<Leader>f',
-  "<CMD>lua require('gstokkink.plugins.telescope.custom_commands').live_grep()<CR>",
-  default_options
-)
+map('n', '<Leader>f', "<CMD>lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>", default_options)
 
 -- Live grep with current word
 map(
   'n',
   '<Leader>]',
-  "<CMD>lua require('gstokkink.plugins.telescope.custom_commands').live_grep_cword()<CR>",
+  "<CMD>lua require('telescope-live-grep-args.shortcuts').grep_word_under_cursor()<CR>",
   default_options
 )
 
@@ -80,7 +75,7 @@ map(
 map(
   'v',
   '<Leader>]',
-  "<CMD>lua require('gstokkink.plugins.telescope.custom_commands').live_grep_selection()<CR>",
+  "<CMD>lua require('telescope-live-grep-args.shortcuts').grep_visual_selection()<CR>",
   default_options
 )
 

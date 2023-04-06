@@ -32,6 +32,7 @@ return {
         dim_inactive = {
           enabled = true,
           shade = 'dark',
+          percentage = 0,
         },
         highlight_overrides = {
           latte = buildOverrides('latte'),
