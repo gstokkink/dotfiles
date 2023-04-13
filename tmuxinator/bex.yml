@@ -62,7 +62,7 @@ windows:
       layout: even-vertical
       panes:
         - bundle exec rails s -p 3000
-        - BROWSER=/dev/null LAUNCHY_DRY_RUN=true bundle exec sidekiq
+        - bundle exec sidekiq
         - foreman start -f Procfile.dev
         - elasticsearch:
           - cd ../..

@@ -1610,6 +1610,8 @@
 	</dict>
 	<key>Print In Black And White</key>
 	<true/>
+	<key>ShowPaneTitles</key>
+	<false/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>TabStyleWithAutomaticOption</key>
