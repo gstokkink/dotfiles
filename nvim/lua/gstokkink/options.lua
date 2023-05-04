@@ -3,9 +3,6 @@ local opt = vim.opt
 -- Autoread open buffers
 opt.autoread = true
 
--- Sync with system clipboard
-opt.clipboard = 'unnamedplus'
-
 -- Autocompletion
 opt.completeopt = { 'menu', 'menuone', 'noselect' }
 
