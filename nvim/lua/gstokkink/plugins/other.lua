@@ -1,7 +1,4 @@
 return {
-  -- Faster and improved filetype detection
-  { 'nathom/filetype.nvim' },
-
   -- Intelligently show absolute or relative line numbers
   { 'sitiom/nvim-numbertoggle' },
 

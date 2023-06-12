@@ -34,7 +34,6 @@ return {
       'markdown',
       'ruby',
       'scss',
-      'sql',
       'toml',
       'tsx',
       'typescript',
