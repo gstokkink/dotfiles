@@ -63,7 +63,7 @@ windows:
       panes:
         - bundle exec rails s -p 3001
         - bundle exec sidekiq
-        - foreman start -f Procfile.dev
+        - yarn install && foreman start -f Procfile.dev
   - remote:
       layout: even-vertical
       panes:

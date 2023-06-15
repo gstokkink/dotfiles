@@ -63,13 +63,13 @@ windows:
       panes:
         - bundle exec rails s -p 3000
         - bundle exec sidekiq
-        - foreman start -f Procfile.dev
+        - yarn install && foreman start -f Procfile.dev
         - elasticsearch:
           - cd ../..
           - docker compose up elastic
         - planboard:
           - cd ../planboard_client
-          - yarn start
+          - yarn install && yarn start
   - remote:
       layout: even-vertical
       panes:

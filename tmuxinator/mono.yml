@@ -1,7 +1,7 @@
-# /Users/work/.config/tmuxinator/apps.yml
+# /Users/work/.config/tmuxinator/mono.yml
 
-name: apps
-root: ~/Projects/monorepo/apps/bookingexperts-apps
+name: mono
+root: ~/Projects/monorepo
 
 # Optional tmux socket
 # socket_name: foo
@@ -53,15 +53,3 @@ windows:
       panes:
         - nvim
         -
-  - console:
-      layout: even-vertical
-      panes:
-        - bundle exec rails c
-        - bundle exec rails db
-  - server:
-      layout: even-vertical
-      panes:
-        - bundle exec rails s -p 3002
-        - bundle exec sidekiq
-        - yarn install && foreman start -f Procfile.dev
-  - logs: tail -f log/development.log
