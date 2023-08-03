@@ -1,6 +1,6 @@
 # /Users/work/.config/tmuxinator/cmn.yml
 
-name: gems
+name: cmn
 root: ~/Projects/monorepo/gems/common
 
 # Optional tmux socket

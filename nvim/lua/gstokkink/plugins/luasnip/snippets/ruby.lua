@@ -4,10 +4,15 @@ local t = luasnip.text_node
 
 local snippets = {
   s({
-    trig = 'kpry',
-    name = '::Kernel.binding.pry',
-    dscr = 'Inserts binding.pry from Kernel namespace',
-  }, t('::Kernel.binding.pry')),
+    trig = 'bb',
+    name = '::Kernel.binding.b',
+    dscr = 'Inserts binding.b from Kernel namespace',
+  }, t('::Kernel.binding.b')),
+  s({
+    trig = 'bi',
+    name = '::Kernel.binding.irb',
+    dscr = 'Inserts binding.irb from Kernel namespace',
+  }, t('::Kernel.binding.irb')),
 }
 
 return snippets

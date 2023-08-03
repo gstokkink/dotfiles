@@ -1,10 +1,6 @@
 return {
   'neovim/nvim-lspconfig',
   dependencies = {
-    {
-      'j-hui/fidget.nvim', -- For language server progress information
-      config = true,
-    },
     { 'hrsh7th/cmp-nvim-lsp' }, -- Autocompletion from language server
     { 'folke/neodev.nvim' }, -- Useful for Lua language server
     { 'b0o/schemastore.nvim' }, -- Useful for JSON and YAML language servers
