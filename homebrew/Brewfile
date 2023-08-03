@@ -20,6 +20,7 @@ brew "memcached", restart_service: true
 brew "neovim"
 brew "node"
 brew "postgresql@12", restart_service: true, link: true
+brew "pv"
 brew "python@3.10"
 brew "rbenv"
 brew "redis", restart_service: true
