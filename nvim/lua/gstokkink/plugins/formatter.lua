@@ -44,6 +44,9 @@ return {
         sh = {
           require('formatter.filetypes.sh').shfmt,
         },
+        terraform = {
+          require('formatter.filetypes.terraform').terraformfmt,
+        },
         toml = {
           require('formatter.filetypes.toml').taplo,
         },

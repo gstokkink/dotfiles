@@ -1,7 +1,7 @@
-# /Users/work/.config/tmuxinator/ocd.yml
+# /Users/work/.config/tmuxinator/tf.yml
 
-name: ocd
-root: ~/Projects/on_call_dashboard
+name: tf
+root: ~/Projects/terraform
 
 # Optional tmux socket
 # socket_name: foo
@@ -53,6 +53,3 @@ windows:
       panes:
         - nvim
         -
-  - console:
-      panes:
-        - DISABLE_CACHE=true bundle exec rackup config.ru

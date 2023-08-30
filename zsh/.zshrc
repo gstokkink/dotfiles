@@ -134,6 +134,7 @@ alias cms='mux cms'
 alias apps='mux apps'
 alias gems='mux gems'
 alias sema='mux sema'
+alias tf='mux tf'
 alias pb='mux pb'
 alias ocd='mux ocd'
 alias cmn='mux cmn'
@@ -143,6 +144,21 @@ alias rb='bundle exec rubocop'
 alias rba='bundle exec rubocop -a'
 alias rbA='bundle exec rubocop -A'
 alias gcw='gc -n -m "WIP" -m "[skip ci]"'
+
+# CUSTOM FUNCTIONS
+
+# Terraform
+terraform-targets () {
+  sed 's/\x1b\[[0-9;]*m//g' | grep -o '# [^( ]* ' | grep '\.' | sed " s/^# /-target '/; s/ $/'/; "
+}
+
+terraform-grep () {
+  terraform plan | terraform-targets | grep $1
+}
+
+terraform-grep-apply () {
+  terraform-grep $1 | xargs -r -o terraform apply
+}
 
 # To customize prompt, run `p10k configure` or edit $ZDOTDIR/.p10k.zsh.
 [[ ! -f $ZDOTDIR/.p10k.zsh ]] || source $ZDOTDIR/.p10k.zsh
