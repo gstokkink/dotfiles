@@ -129,6 +129,7 @@ alias vim='nvim'
 
 alias mux='tmuxinator'
 alias tks='tmux kill-server'
+alias tkd='tmux list-session | grep -v " (attached)$" | cut -d: -f1 | xargs -r -L1 tmux kill-session -t' # Kill all detached sessions
 alias bex='mux bex'
 alias cms='mux cms'
 alias apps='mux apps'
