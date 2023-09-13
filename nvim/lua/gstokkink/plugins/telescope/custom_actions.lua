@@ -116,13 +116,21 @@ M.multi_selection_open_vertical = stop_insert(custom_actions.multi_selection_ope
 
 M.multi_selection_open_tab = stop_insert(custom_actions.multi_selection_open_tab)
 
-function M.insert_ignore_list(prompt_bufnr)
+local function insert_ignore_list(prompt_bufnr, ignore_list)
   local picker = action_state.get_current_picker(prompt_bufnr)
   local prompt = picker:_get_prompt()
 
-  prompt = prompt .. "-g '!{db/*,lib/tasks/*}'"
+  prompt = prompt .. " -g '!{" .. ignore_list .. "}'"
 
   picker:set_prompt(prompt)
+end
+
+function M.insert_ignore_migrations_and_tasks(prompt_bufnr)
+  insert_ignore_list(prompt_bufnr, 'db/*,lib/tasks/*')
+end
+
+function M.insert_ignore_tests(prompt_bufnr)
+  insert_ignore_list(prompt_bufnr, 'test/*')
 end
 
 return M

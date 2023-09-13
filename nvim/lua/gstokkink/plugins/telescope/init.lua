@@ -40,7 +40,8 @@ return {
           mappings = {
             i = {
               ['<C-l>'] = require('telescope-live-grep-args.actions').quote_prompt(),
-              ['<C-o>'] = custom_actions.insert_ignore_list,
+              ['<C-i>'] = custom_actions.insert_ignore_tests,
+              ['<C-o>'] = custom_actions.insert_ignore_migrations_and_tasks,
               ['<C-n>'] = actions.cycle_history_next,
               ['<C-p>'] = actions.cycle_history_prev,
             },
