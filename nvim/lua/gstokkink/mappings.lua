@@ -4,6 +4,7 @@ local default_options = { noremap = true }
 
 -- Quick save
 map('n', '<Leader>a', '<CMD>w<CR>', default_options)
+map('n', '<Leader>A', '<CMD>noautocmd update<CR>', default_options)
 
 -- Quick exit
 map('n', '<Leader>q', '<CMD>q<CR>', default_options)

@@ -15,10 +15,6 @@ return {
       -- See `:help omnifunc` and `:help ins-completion` for more information.
       api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.lsp.omnifunc')
 
-      -- Use language server as the handler for formatexpr.
-      -- See `:help formatexpr` for more information.
-      api.nvim_buf_set_option(bufnr, 'formatexpr', 'v:lua.lsp.formatexpr()')
-
       -- Configure key mappings for language server
       local map = require('gstokkink.utils').map
 

@@ -139,14 +139,26 @@ alias tf='mux tf'
 alias pb='mux pb'
 alias ocd='mux ocd'
 alias cmn='mux cmn'
+alias cli='mux cli'
 alias ass='mux ass'
 alias mono='mux mono'
-alias rb='bundle exec rubocop'
-alias rba='bundle exec rubocop -a'
-alias rbA='bundle exec rubocop -A'
+alias rba='rb -a'
+alias rbA='rb -A'
 alias gcw='gc -n -m "WIP" -m "[skip ci]"'
+alias k9='kill -9'
 
 # CUSTOM FUNCTIONS
+
+
+# SSM
+
+ssm () {
+  aws ssm start-session --target $1 --document-name SSM-StartInteractiveCommand --parameters command='["/bin/bash -l"]'
+}
+
+ssm-session-log () {
+  echo -e $(aws logs get-log-events --log-group-name=/aws/ssm/session-logs --log-stream-name=$1 | jq ".events[0].message")
+}
 
 # Terraform
 terraform-targets () {
@@ -159,6 +171,14 @@ terraform-grep () {
 
 terraform-grep-apply () {
   terraform-grep $1 | xargs -r -o terraform apply
+}
+
+terraform-lock () {
+  terraform providers lock -platform=darwin_amd64 -platform=linux_amd64
+}
+
+docker-login () {
+  aws ecr get-login-password --region eu-central-1 | docker login --username AWS --password-stdin 762732311162.dkr.ecr.eu-central-1.amazonaws.com
 }
 
 # To customize prompt, run `p10k configure` or edit $ZDOTDIR/.p10k.zsh.
