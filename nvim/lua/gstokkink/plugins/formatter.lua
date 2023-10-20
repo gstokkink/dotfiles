@@ -5,8 +5,10 @@ return {
       formatters = {
         rubocop = {
           inherit = false,
-          command = 'rb',
+          command = 'bundle',
           args = {
+            'exec',
+            'rubocop',
             '-f',
             'quiet',
             '--fix-layout',
