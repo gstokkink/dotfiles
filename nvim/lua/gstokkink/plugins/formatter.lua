@@ -18,7 +18,6 @@ return {
           },
           cwd = require('conform.util').root_file({ '.rubocop.yml' }),
           require_cwd = true,
-          exit_codes = { 0, 1 },
         },
       },
       formatters_by_ft = {
@@ -50,7 +49,7 @@ return {
 
         return { lsp_fallback = false }
       end,
-      notify_on_error = false,
+      -- notify_on_error = false,
     }
   end,
   init = function()

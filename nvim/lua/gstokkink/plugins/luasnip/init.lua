@@ -11,8 +11,9 @@ return {
     -- Load Rails snippets for ruby filetype
     luasnip.filetype_extend('ruby', { 'rails' })
 
-    -- Load Ruby snippets for haml filetype
+    -- Load Ruby snippets for haml and slim filetypes
     luasnip.filetype_extend('haml', { 'ruby' })
+    luasnip.filetype_extend('slim', { 'ruby' })
 
     -- Load custom snippets
     require('luasnip.loaders.from_lua').lazy_load({ paths = snippets_folder, override_priority = 1 })
