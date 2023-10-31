@@ -113,9 +113,9 @@ export AWS_CONFIG_FILE="$HOME/.config/aws/config"
 # Source all key files
 set -o allexport
 
-for key_file in $HOME/.config/keys/*
+for secret_file in $HOME/.config/secrets/*
 do
-  source $key_file
+  source $secret_file
 done
 
 set +o allexport

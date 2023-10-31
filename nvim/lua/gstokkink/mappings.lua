@@ -107,6 +107,3 @@ map(
 map('n', '<Leader>ss', "<CMD>lua require('persistence').load()<CR>", default_options)
 map('n', '<Leader>sl', "<CMD>lua require('persistence').load({ last = true })<CR>", default_options)
 map('n', '<Leader>sd', "<CMD>lua require('persistence').stop()<CR>", default_options)
-
--- CodeGPT mappings
-map('x', '<C-i>', ':Chat ', default_options)
