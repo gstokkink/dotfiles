@@ -33,7 +33,7 @@ return {
         toml = { 'taplo' },
         typescript = { 'prettierd' },
         yaml = { 'yamlfmt' },
-        ['*'] = { 'trim_whitespace' },
+        ['*'] = { 'trim_whitespace', 'trim_newlines' },
       },
       format_on_save = function(bufnr)
         if vim.bo[bufnr].filetype == 'ruby' then
