@@ -110,6 +110,9 @@ export LESSHISTFILE=-
 # Change AWS CLI configuration location
 export AWS_CONFIG_FILE="$HOME/.config/aws/config"
 
+# Increase default Terraform parallelism
+export TFE_PARALLELISM=50
+
 # Source all key files
 set -o allexport
 
@@ -176,6 +179,14 @@ terraform-grep-apply () {
 
 terraform-lock () {
   terraform providers lock -platform=darwin_amd64 -platform=linux_amd64
+}
+
+terraform-diff-update () {
+  terraform plan -target="$1" -out=tfplan && diff <(terraform show -json tfplan | jq -r '.resource_changes[] | select(.change.actions | index("update")) | .change.before') <(terraform show -json tfplan | jq -r '.resource_changes[] | select(.change.actions | index("update")) | .change.after')
+}
+
+terraform-diff-replace () {
+  terraform plan -target="$1" -out=tfplan && diff <(terraform show -json tfplan | jq -r '.resource_changes[] | select(.change.actions == ["delete", "create"]) | .change.before') <(terraform show -json tfplan | jq -r '.resource_changes[] | select(.change.actions == ["delete", "create"]) | .change.after')
 }
 
 docker-login () {
