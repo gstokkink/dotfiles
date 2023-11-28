@@ -19,6 +19,9 @@ return {
           cwd = require('conform.util').root_file({ '.rubocop.yml' }),
           require_cwd = true,
         },
+        shfmt = {
+          prepend_args = { '-i', '2' },
+        },
       },
       formatters_by_ft = {
         css = { 'prettierd' },
