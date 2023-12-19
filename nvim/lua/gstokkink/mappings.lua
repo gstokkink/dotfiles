@@ -31,9 +31,6 @@ map('n', '<Leader>0', ':tablast', default_options)
 map('n', '<Leader>l', "<CMD>let @* = expand('%')<CR>", default_options)
 map('n', '<Leader>L', "<CMD>let @* = join([expand('%'), line('.')], ':')<CR>", default_options)
 
--- Paste over selected text
-map('v', 'p', '"_dP', default_options)
-
 -- Reselect pasted text
 map('n', 'gp', "'`[' . strpart(getregtype(), 0, 1) . '`]'", { expr = true })
 
