@@ -101,9 +101,6 @@ fi
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-export LDFLAGS="-L/usr/local/opt/postgresql@12/lib"
-export CPPFLAGS="-I/usr/local/opt/postgresql@12/include"
-
 # Disable less history
 export LESSHISTFILE=-
 
@@ -116,10 +113,10 @@ export TFE_PARALLELISM=50
 # Source all key files
 set -o allexport
 
-for secret_file in $HOME/.config/secrets/*
-do
-  source $secret_file
-done
+# for secret_file in $HOME/.config/secrets/*
+# do
+#  source $secret_file
+# done
 
 set +o allexport
 

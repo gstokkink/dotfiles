@@ -37,16 +37,6 @@ return {
       'yaml',
     },
     auto_install = true,
-    context_commentstring = {
-      enable = true,
-      enable_autocmd = false,
-      config = {
-        ruby = {
-          __default = '# %s',
-          __multiline = '=begin %s =end',
-        },
-      },
-    },
     endwise = {
       enable = true,
     },
@@ -57,5 +47,16 @@ return {
   },
   config = function(_, opts)
     require('nvim-treesitter.configs').setup(opts)
+
+    require('ts_context_commentstring').setup {
+      enable = true,
+      enable_autocmd = false,
+      config = {
+        ruby = {
+          __default = '# %s',
+          __multiline = '=begin %s =end',
+        },
+      },
+    }
   end,
 }
