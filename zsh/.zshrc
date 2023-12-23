@@ -108,17 +108,10 @@ export LESSHISTFILE=-
 export AWS_CONFIG_FILE="$HOME/.config/aws/config"
 
 # Increase default Terraform parallelism
-export TFE_PARALLELISM=50
+export TFE_PARALLELISM=30
 
-# Source all key files
-set -o allexport
-
-# for secret_file in $HOME/.config/secrets/*
-# do
-#  source $secret_file
-# done
-
-set +o allexport
+# Shut Lefthook up as much as possible
+export LEFTHOOK_QUIET="meta,summary,execution,execution_info,skips"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -144,10 +137,13 @@ alias cli='mux cli'
 alias ass='mux ass'
 alias mono='mux mono'
 alias ds='mux ds'
+alias svcs='mux svcs'
+
+alias rb='bundle exec rubocop'
 alias rba='rb -a'
 alias rbA='rb -A'
+
 alias gcw='gc -n -m "WIP" -m "[skip ci]"'
-alias k9='kill -9'
 
 alias tws='terraform workspace'
 

@@ -46,10 +46,10 @@ root: ~/Projects/monorepo/apps/bookingexperts
 
 windows:
   - editor:
-      layout: 2188,238x80,0,0[238x63,0,0,0,238x16,0,64,4]
       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
+      layout: 3613,142x55,0,0[142x43,0,0,0,142x11,0,44,5]
       panes:
         - nvim
         -
@@ -64,9 +64,6 @@ windows:
         - bundle exec rails s -p 3000
         - bundle exec sidekiq
         - yarn install && foreman start -f Procfile.dev
-        - elasticsearch:
-          - cd ../..
-          - docker compose up elastic
         - planboard:
           - cd ../planboard_client
           - yarn install && yarn start
