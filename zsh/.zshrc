@@ -77,7 +77,7 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rails)
+plugins=(git rails aws terraform tmuxinator docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -129,12 +129,11 @@ alias cms='mux cms'
 alias apps='mux apps'
 alias gems='mux gems'
 alias sema='mux sema'
-alias tf='mux tf'
+alias terra='mux terra'
 alias pb='mux pb'
 alias ocd='mux ocd'
 alias cmn='mux cmn'
 alias cli='mux cli'
-alias ass='mux ass'
 alias mono='mux mono'
 alias ds='mux ds'
 alias svcs='mux svcs'
