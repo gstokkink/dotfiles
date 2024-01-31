@@ -126,11 +126,11 @@ local function insert_ignore_list(prompt_bufnr, ignore_list)
 end
 
 function M.insert_ignore_migrations_and_tasks(prompt_bufnr)
-  insert_ignore_list(prompt_bufnr, 'db/*,lib/tasks/*')
+  insert_ignore_list(prompt_bufnr, '**/db/**,**/lib/tasks/**')
 end
 
 function M.insert_ignore_tests(prompt_bufnr)
-  insert_ignore_list(prompt_bufnr, 'test/*')
+  insert_ignore_list(prompt_bufnr, '**/test/**')
 end
 
 return M
