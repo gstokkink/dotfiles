@@ -142,6 +142,8 @@ alias rb='bundle exec rubocop'
 alias rba='rb -a'
 alias rbA='rb -A'
 
+alias sc='shellcheck'
+
 alias gcw='gc -n -m "WIP" -m "[skip ci]"'
 
 alias tws='terraform workspace'

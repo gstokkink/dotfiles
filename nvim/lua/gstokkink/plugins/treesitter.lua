@@ -10,7 +10,7 @@ return {
     {
       'lukas-reineke/indent-blankline.nvim', -- Show indent lines
       main = 'ibl',
-      config = true
+      config = true,
     },
     { 'rrethy/nvim-treesitter-endwise' }, -- Autoclosing blocks etc. for Ruby
     { 'JoosepAlviste/nvim-ts-context-commentstring' }, -- Autodetecting comments for nested languages
@@ -43,12 +43,12 @@ return {
     highlight = {
       enable = true,
       additional_vim_regex_highlighting = false,
-    }
+    },
   },
   config = function(_, opts)
     require('nvim-treesitter.configs').setup(opts)
 
-    require('ts_context_commentstring').setup {
+    require('ts_context_commentstring').setup({
       enable = true,
       enable_autocmd = false,
       config = {
@@ -57,6 +57,6 @@ return {
           __multiline = '=begin %s =end',
         },
       },
-    }
+    })
   end,
 }

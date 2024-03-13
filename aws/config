@@ -1,6 +1,13 @@
 [default]
+sso_session = bex
+sso_account_id = 762732311162
+sso_role_name = administrators
 region = eu-central-1
 output = json
+[sso-session bex]
+sso_start_url = https://bookingexperts.awsapps.com/start#
+sso_region = eu-central-1
+sso_registration_scopes = sso:account:access
 [profile test_user]
 region = eu-central-1
 output = json
