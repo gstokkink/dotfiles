@@ -4,9 +4,8 @@ return {
   config = function()
     vim.api.nvim_exec(
       [[
-        let test#strategy = 'vimux'
-        let g:test#echo_command = 0
-        let g:test#preserve_screen = 1
+        let test#strategy = 'neovim'
+        let g:test#neovim#start_normal = 1
       ]],
       false
     )
