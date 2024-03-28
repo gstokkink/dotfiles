@@ -1,3 +1,4 @@
+---
 # /Users/work/.config/tmuxinator/apps.yml
 
 name: apps
@@ -64,4 +65,3 @@ windows:
         - bundle exec rails s -p 3002
         - bundle exec sidekiq
         - yarn install && foreman start -f Procfile.dev
-  - logs: tail -f log/development.log

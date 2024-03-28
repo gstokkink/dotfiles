@@ -1,3 +1,4 @@
+---
 # /Users/work/.config/tmuxinator/cms.yml
 
 name: cms
@@ -64,9 +65,3 @@ windows:
         - bundle exec rails s -p 3001
         - bundle exec sidekiq
         - yarn install && foreman start -f Procfile.dev
-  - remote:
-      layout: even-vertical
-      panes:
-        -
-        -
-  - logs: tail -f log/development.log

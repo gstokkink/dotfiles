@@ -1,3 +1,4 @@
+---
 # /Users/work/.config/tmuxinator/bex.yml
 
 name: bex
@@ -65,11 +66,5 @@ windows:
         - bundle exec sidekiq
         - yarn install && foreman start -f Procfile.dev
         - planboard:
-          - cd ../planboard_client
-          - yarn install && yarn start
-  - remote:
-      layout: even-vertical
-      panes:
-        -
-        -
-  - logs: tail -f log/development.log
+            - cd ../planboard_client
+            - yarn install && yarn start

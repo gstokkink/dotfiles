@@ -64,4 +64,3 @@ windows:
       panes:
         - bundle exec rails s -p 3003
         - yarn install && foreman start -f Procfile.dev
-  - logs: tail -f log/development.log
