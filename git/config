@@ -16,3 +16,4 @@
 	skippedCherryPicks = false
 [core]
 	attributesfile = ~/.config/git/attributes
+	excludesfile = /Users/work/.gitignore
